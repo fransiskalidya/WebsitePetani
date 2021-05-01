@@ -1,6 +1,5 @@
 @extends('sebelum.layouts.app')
-    <!-- Humberger Begin -->
-    <!-- Humberger End -->
+
 
     <!-- Header Section Begin -->
     {{-- <header class="header">

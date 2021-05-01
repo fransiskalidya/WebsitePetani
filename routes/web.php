@@ -23,6 +23,15 @@ Route::get('/contact', function () {
 Route::get('/keranjang', function () {
     return view('sebelum.keranjang');
 });
+Route::get('/inputData', function () {
+    return view('sebelum.inputData');
+});
+Route::get('/postContent', function () {
+    return view('sebelum.postContent');
+});
+Route::get('/dashboard', function () {
+    return view('sesudah.dashboard');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
