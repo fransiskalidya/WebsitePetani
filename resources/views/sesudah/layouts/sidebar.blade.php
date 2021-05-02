@@ -27,30 +27,30 @@
       <li class="nav-item">
         <a class="nav-link collapsed" href="#">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Home</span></a>
+          <span>Invoice Transaksi</span></a>
       </li>
 
       <!-- Nav Item - Utilities Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{'/inputData'}}">
           <i class="fas fa-fw fa-wrench"></i>
-          <span>Invoice Transaksi</span>
+          <span>Input Data Penerima Subsidi</span>
         </a>
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{'/inputData'}}">
+        <a class="nav-link collapsed" href="{{'/postContent'}}">
           <i class="fas fa-fw fa-folder"></i>
-          <span>Input Data Penerima Subsidi</span>
+          <span>Post Content</span>
         </a>
       </li>
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="{{'/postContent'}}">
+        <a class="nav-link" href="{{'/keranjang'}}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Post Content</span></a>
+          <span>Kasir</span></a>
       </li>
 
       <!-- Divider -->
