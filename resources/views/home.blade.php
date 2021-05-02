@@ -15,6 +15,8 @@
                     @endif
 
                     {{ __('You are logged in!') }}
+                    <br><br>
+                    <a class="btn btn-success" href="{{'/dashboard'}}"> Go to Web PETANIKU</a>
                 </div>
             </div>
         </div>
