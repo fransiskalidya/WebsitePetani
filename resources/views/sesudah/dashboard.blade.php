@@ -183,6 +183,7 @@
                   <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                   Logout
                 </a>
+
               </div>
             </li>
 
@@ -197,7 +198,7 @@
           <!-- Page Heading -->
           <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-            
+
           </div>
 
           <!-- Content Row -->
@@ -216,11 +217,11 @@
                           <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">20</div>
                         </div>
                         <div class="col">
-                          
+
                         </div>
                       </div>
                     </div>
-                    
+
                   </div>
                 </div>
               </div>
@@ -245,7 +246,7 @@
 
           <!-- Content Row -->
 
-    
+
 
             <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
@@ -275,7 +276,7 @@
               </div>
             </div>
 
-            
+
 
           <!-- Content Row -->
 
@@ -303,18 +304,18 @@
                   <div class="progress mb-4">
                     <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
-                  
+
                 </div>
               </div>
             </div>
 
-             
 
-              
+
+
               <!-- Approach -->
-         
+
                 <div class="card-body">
-                 
+
                   <p class="mb-10">“Ia yang mengerjakan lebih dari apa yang dibayar pada suatu saat akan dibayar lebih dari apa yang ia kerjakan” - Napoleon Hill.</p>
                 </div>
               </div>
@@ -354,15 +355,22 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Apakah anda yakin untuk logout?</h5>
           <button class="close" type="button" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+        <div class="modal-body">pilih tombol "Logout" dibawah ini</div>
         <div class="modal-footer">
           <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-          <a class="btn btn-primary" href="login.html">Logout</a>
+          <a class="btn btn-primary" href="{{ route('logout') }}"
+            onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+            @csrf
+        </form>
         </div>
       </div>
     </div>

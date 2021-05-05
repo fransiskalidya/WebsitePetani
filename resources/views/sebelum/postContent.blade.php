@@ -32,37 +32,37 @@
                     </div>
                     <div class="featured__controls">
                         <div class="form-group">
-                            <label for="Judul">Judul</label> 
-                            <input type="text" name="Judul" class="form-control" id="Judul" aria-describedby="Judul" > 
+                            <label for="Judul">Judul</label>
+                            <input type="text" name="Judul" class="form-control" id="Judul" aria-describedby="Judul" >
                         </div>
 
                         <div class="form-group">
-                            <label for="Pengertian">Pengertian</label> 
-                            <input type="Penyebab" name="Pengertian" class="form-control" id="Pengertian" aria-describedby="Pengertian" > 
+                            <label for="Pengertian">Pengertian</label>
+                            <input type="Penyebab" name="Pengertian" class="form-control" id="Pengertian" aria-describedby="Pengertian" >
                         </div>
 
                         <div class="form-group">
-                            <label for="Penyebab">Penyebab</label> 
-                            <input type="Penyebab" name="Penyebab" class="form-control" id="Penyebab" aria-describedby="Penyebab" > 
+                            <label for="Penyebab">Penyebab</label>
+                            <input type="Penyebab" name="Penyebab" class="form-control" id="Penyebab" aria-describedby="Penyebab" >
                         </div>
 
                         <div class="form-group">
-                            <label for="Pencegahan">Pencegahan</label> 
-                            <input type="Pencegahan" name="Pencegahan" class="form-control" id="Pencegahan" aria-describedby="Pencegahan" > 
+                            <label for="Pencegahan">Pencegahan</label>
+                            <input type="Pencegahan" name="Pencegahan" class="form-control" id="Pencegahan" aria-describedby="Pencegahan" >
                         </div>
 
                         <div class="form-group">
-                            <label for="Tips">Tips</label> 
-                            <input type="Tips" name="Tips" class="form-control" id="Tips" aria-describedby="Tips" > 
+                            <label for="Tips">Tips</label>
+                            <input type="Tips" name="Tips" class="form-control" id="Tips" aria-describedby="Tips" >
                         </div>
 
                         <br><br>
                         <button type="submit" class="btn btn-primary">Submit</button>
-                        
+
 
                     </div>
                 </div>
             </div>
-           
+        </section>
 
     {{-- post content section end --}}
