@@ -28,7 +28,6 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
-
 @include('sebelum.layouts.footer')
 
 

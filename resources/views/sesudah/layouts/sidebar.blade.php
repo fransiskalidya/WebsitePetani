@@ -52,21 +52,27 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Kasir</span></a>
       </li>
-
-{{--
       <li class="nav-item">
+        <a class="nav-link" href="{{ route('register') }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Register</span></a>
+      </li>
+
+      {{-- <li class="nav-item">
          @if (Route::has('register'))
       <li class="nav-item">
           <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
       </li>
   @endif
       </li> --}}
+      {{-- <li class="nav-item">
 
        @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
+                        </li> --}}
 
       <!-- Divider -->
       <hr class="sidebar-divider d-none d-md-block">
