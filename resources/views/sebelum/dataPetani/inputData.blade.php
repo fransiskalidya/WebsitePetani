@@ -18,7 +18,7 @@
                             {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
                             <li ><a href="{{'/'}}">Home</a></li>
                             <li ><a href="{{'/contact'}}">Contact</a></li>
-                            <li class="active"><a href="{{'/inputData'}}">Data Penerima Subsidi</a></li>
+                            <li ><a href="{{route ('dataPetani.index')}}">Data Penerima Subsidi</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                     </nav>
@@ -39,7 +39,7 @@
                     <div class="breadcrumb__text">
                         <h2>Input Data Petani</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
+                            <a href="{{'home'}}">Home</a>
                             <span>Input Data Petani</span>
                         </div>
                     </div>
@@ -57,34 +57,48 @@
                     <div class="section-title">
                         <h2>Input Data Petani</h2>
                     </div>
-                    <div class="featured__controls">
-                        <div class="form-group">
-                            <label for="IdPenerima">Id Penerima : </label>
-                            <input type="text" name="IdPenerima" class="form-control" id="IdPenerima" aria-describedby="IdPenerima" >
+                    <div class="card-body">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                    </div>
+                    <form method="post" action="{{ route('dataPetani.store') }}" id="myForm">
+                        @csrf
+                        <div class="featured__controls">
+                            <div class="form-group">
+                                <label for="id_petani">Id Petani : </label>
+                                <input type="text" name="id_petani" class="form-control" id="id_petani" aria-describedby="id_petani" >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="nama">Nama</label>
+                                <input type="nama" name="nama" class="form-control" id="nama" aria-describedby="nama" >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="alamat">Alamat</label>
+                                <input type="alamat" name="alamat" class="form-control" id="alamat" aria-describedby="alamat" >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="no_tlpn">No Telepon</label>
+                                <input type="no_tlpn" name="no_tlpn" class="form-control" id="no_tlpn" aria-describedby="no_tlpn" >
+                            </div>
+
+                            <br><br>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+
+
                         </div>
-
-                        <div class="form-group">
-                            <label for="Nama">Nama</label>
-                            <input type="Nama" name="Nama" class="form-control" id="Nama" aria-describedby="Nama" >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="Alamat">Alamat</label>
-                            <input type="Alamat" name="Alamat" class="form-control" id="Alamat" aria-describedby="Alamat" >
-                        </div>
-
-                        <div class="form-group">
-                            <label for="NoTelepon">No Telepon</label>
-                            <input type="NoTelepon" name="NoTelepon" class="form-control" id="NoTelepon" aria-describedby="NoTelepon" >
-                        </div>
-
-                        <br><br>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-
-
                     </div>
                 </div>
-            </div>
 
 
     {{-- Input Data section end --}}

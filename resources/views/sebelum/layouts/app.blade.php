@@ -28,6 +28,7 @@
     <div id="preloder">
         <div class="loader"></div>
     </div>
+    {{-- @section('content') --}}
 @include('sebelum.layouts.footer')
 
 

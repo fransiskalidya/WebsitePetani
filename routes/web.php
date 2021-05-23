@@ -2,8 +2,9 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use  App\Http\Controllers\ContentController; 
-use  Illuminate\Http\Request; 
+use  App\Http\Controllers\ContentController;
+use App\Http\Controllers\DataPetaniController;
+use  Illuminate\Http\Request;
 
 
 /*
@@ -27,8 +28,13 @@ Route::get('/keranjang', function () {
     return view('sebelum.keranjang');
 });
 Route::get('/inputData', function () {
-    return view('sebelum.inputData');
+    return view('sebelum.dataPetani.inputData');
 });
+
+// Route::get('/dataPetani', function () {
+//     return view('sebelum.dataPetani.index');
+// });
+
 
 Route::get('/create', function () {
     return view('contents.create');
@@ -45,3 +51,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('content',  ContentController::class);
+Route::resource('dataPetani',  DataPetaniController::class);
