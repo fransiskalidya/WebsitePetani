@@ -47,8 +47,14 @@ Route::get('/edit', function () {
 Route::get('/dashboard', function () {
     return view('sesudah.dashboard');
 });
+
+// Route::get('dataPetani/tampil', function () {
+//     return view('sebelum.dataPetani.tampil');
+// });
+
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('content',  ContentController::class);
 Route::resource('dataPetani',  DataPetaniController::class);
+// Route::get('dataPetani/tampil', DataPetaniController::class, 'tampil')->name('dataPetani.tampil');

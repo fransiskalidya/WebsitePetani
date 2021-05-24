@@ -18,7 +18,7 @@
                             {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
                             <li ><a href="{{'/'}}">Home</a></li>
                             <li ><a href="{{'/contact'}}">Contact</a></li>
-                            <li class="active"><a href="#">Data Penerima Subsidi</a></li>
+                            <li class="active"><a href="{{'/inputData'}}">Data Penerima Subsidi</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                     </nav>
@@ -61,7 +61,7 @@
                 <!-- Form Search -->
 
                 <div class="float-left my-2">
-                    <form action="{{route('dataPetani.index')}}" class="row g-3" method="GET">
+                    <form action="{{route('dataPetani.tampil')}}" class="row g-3" method="GET">
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" name="search" placeholder="Search...">
                             <span class="input-group-btn">
@@ -72,9 +72,9 @@
                 </div>
                 <!-- End Form Search -->
 
-                <div class="float-right my-2">
+                {{-- <div class="float-right my-2">
                     <a class="btn btn-success" href="{{'/inputData'}}"> Input data petani</a>
-                </div>
+                </div> --}}
             </div>
         </div>
 
@@ -90,7 +90,7 @@
                 <th>Nama</th>
                 <th>Alamat</th>
                 <th>No Telepon</th>
-                <th width="250px">Action</th>
+                {{-- <th width="250px">Action</th> --}}
             </tr>
             @foreach ($datas as $data)
             <tr>
@@ -99,7 +99,7 @@
                 <td>{{ $data->nama }}</td>
                 <td>{{ $data->alamat }}</td>
                 <td>{{ $data->no_tlpn }}</td>
-                <td>
+                {{-- <td>
                 <form action="{{ route('dataPetani.destroy',$data->id_petani) }}" method="POST">
                     <a class="btn btn-info" href="{{ route('dataPetani.show',$data->id_petani) }}">Show</a>
                     <a class="btn btn-primary" href="{{ route('dataPetani.edit',$data->id_petani) }}">Edit</a>
@@ -107,7 +107,7 @@
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form>
-                </td>
+                </td> --}}
             </tr>
             @endforeach
             </table>

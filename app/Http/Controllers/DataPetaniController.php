@@ -113,4 +113,14 @@ class DataPetaniController extends Controller
         return redirect()->route('dataPetani.index')
             ->with('success', 'Data Berhasil Dihapus');
     }
+    // public function tampil(Request $request)
+    // {
+    //     if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+    //         $datas = DataPetani::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
+    //     } else { // Jika tidak melakukan pencarian judul
+    //         //fungsi eloquent menampilkan data menggunakan pagination
+    //         $datas = DataPetani::orderBy('id_petani', 'desc')->paginate(5); // Pagination menampilkan 5 data
+    //     }
+    //     return view('sebelum.dataPetani.tampil', compact('datas'));
+    // }
 }
