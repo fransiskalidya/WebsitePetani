@@ -20,6 +20,9 @@
 
 </head>
 
+<body>
+
+  @yield('content')
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>

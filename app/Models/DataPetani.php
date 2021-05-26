@@ -18,4 +18,8 @@ class DataPetani extends Model
         'alamat',
         'no_tlpn',
     ];
+
+    public function barang(){
+        return $this->belongsToMany(Barang::class, 'petani_barang', 'petani_id', 'barang_id')->withPivot('harga');
+    }
 }

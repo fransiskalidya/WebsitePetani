@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\DataPetani;
+use App\Models\Petani_Barang;
 use Illuminate\Http\Request;
 use Symfony\Component\VarDumper\Cloner\Data;
 
@@ -123,4 +124,11 @@ class DataPetaniController extends Controller
     //     }
     //     return view('sebelum.dataPetani.tampil', compact('datas'));
     // }
+
+    public function invoice($id_petani){
+        $data_petani = DataPetani::with('barang')
+            ->where('id_petani', $id_petani)
+            ->first();
+        return view('sesudah.invoice', compact('data_petani'));
+    }
 }

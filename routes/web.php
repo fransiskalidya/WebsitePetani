@@ -58,3 +58,5 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('content',  ContentController::class);
 Route::resource('dataPetani',  DataPetaniController::class);
 // Route::get('dataPetani/tampil', DataPetaniController::class, 'tampil')->name('dataPetani.tampil');
+
+Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'invoice']);
