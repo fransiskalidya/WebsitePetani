@@ -2,16 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Article;
 use Illuminate\Http\Request;
-use App\Models\Content;
 
-class ContentController extends Controller
+
+class ArticleController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function index()
     {
-        $content = Content::all();
-        return view('sebelum.index', ['dataIndex' => $content]);
+        $article = Article::all();
+        return view('sebelum.article.detail', ['article' => $article]);
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -19,9 +26,8 @@ class ContentController extends Controller
      */
     public function create()
     {
-        return view('sebelum.postContent');
+        //
     }
-    
 
     /**
      * Store a newly created resource in storage.
@@ -31,20 +37,7 @@ class ContentController extends Controller
      */
     public function store(Request $request)
     {
-        if ($request->file('Image')) {
-            $image_name = $request->file('Image')->store('featured_image', 'public');
-        }
-
-        Content::create([
-            'Judul' => $request->Judul,
-            'Image' =>  $image_name,
-            'Pengertian' => $request->Pengertian,
-            'Penyebab' => $request->Penyebab,
-            'Pencegahan' => $request->Pencegahan,
-            'Tips' => $request->Tips,
-        ]);
-        return redirect()->route('content.index')
-            ->with('success', 'Artikel berhasil disimpan');
+        //
     }
 
     /**
@@ -55,9 +48,8 @@ class ContentController extends Controller
      */
     public function show($id)
     {
-       //Menampilkan detail data dengan menemukan id Content
-    $Content = Content::find($id);
-    return view('contents.detail', compact('Content'));  
+        $article = Article::find($id);
+        return view('sebelum.article.detail', compact('article'));
     }
 
     /**
@@ -80,7 +72,6 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-       
         //
     }
 
@@ -94,4 +85,14 @@ class ContentController extends Controller
     {
         //
     }
-};
+    // public function tampil(Request $request)
+    // {
+    //     if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+    //         $datas = DataPetani::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
+    //     } else { // Jika tidak melakukan pencarian judul
+    //         //fungsi eloquent menampilkan data menggunakan pagination
+    //         $datas = DataPetani::orderBy('id_petani', 'desc')->paginate(5); // Pagination menampilkan 5 data
+    //     }
+    //     return view('sebelum.dataPetani.tampil', compact('datas'));
+    // }
+}

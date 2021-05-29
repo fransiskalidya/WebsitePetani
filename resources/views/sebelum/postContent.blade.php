@@ -30,10 +30,28 @@
                     <div class="section-title">
                         <h2>Post Content</h2>
                     </div>
+                    <div class="card-body">
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <strong>Whoops!</strong> There were some problems with your input.<br><br>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form method="post" action="{{ route('content.store') }}" id="myForm" enctype="multipart/form-data">
+                @csrf
                     <div class="featured__controls">
                         <div class="form-group">
                             <label for="Judul">Judul</label>
                             <input type="text" name="Judul" class="form-control" id="Judul" aria-describedby="Judul" >
+                        </div>
+
+                         <div class="form-group">
+                            <label for="Image">Foto : </label>
+                            <input type="file" name="Image" class="form-control" id="Image" aria-describedby="Image"></br>
                         </div>
 
                         <div class="form-group">

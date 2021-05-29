@@ -95,11 +95,11 @@
                                 <li><a href="#">E (10)</a></li>
                             </ul> --}}
                         </div>
-                       
+                        @foreach $article as $content)
                         <div class="blog__sidebar__item">
                             <h4>Artikel terbaru</h4>
                             <div class="blog__sidebar__recent">
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{ route('content.index',$content->id) }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
                                         <img src="img/blog/sidebar/sr-1.jpg" alt="">
                                     </div>
@@ -108,12 +108,12 @@
                                         <ul>
                                             <li>
                                                 <span>MAR 05, 2019</span> </br>
-                                                <i class="fa fa-eye" aria-hidden="false" href="#">
+                                                <i class="fa fa-eye" aria-hidden="false" href="{{ route('article.show',$article->id) }}">
                                             </i>
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{ route('content.index',$content->id) }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
                                         <img src="img/blog/sidebar/sr-2.jpg" alt="">
                                     </div>
@@ -121,13 +121,13 @@
                                         <h6>Kapan Waktu yang Tepat<br /> Menanam Bibit Buah?</h6>
                                         <ul>
                                             <li>
-                                                <span>MAR 05, 2019</span> </br>
-                                                <i class="fa fa-eye" aria-hidden="false" href="#">
+                                                <span>MAR 05, 2019></span> </br>
+                                                <i class="fa fa-eye" aria-hidden="false" href="{{ route('article.show',$article->id) }}">
                                             </i>
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{ route('content.index',$content->id) }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
                                         <img src="img/blog/sidebar/sr-3.jpg" alt="">
                                     </div>
@@ -136,14 +136,14 @@
                                         <ul>
                                             <li>
                                                 <span>MAR 05, 2019</span> </br>
-                                                <i class="fa fa-eye" aria-hidden="false" href="#">
+                                                <i class="fa fa-eye" aria-hidden="false" href="{{ route('article.show',$article->id) }}">
                                             </i>
                                         </ul>
                                     </div>
                                 </a>
                             </div>
                         </div>
-                        
+                        @endforeach
                         {{-- <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">
@@ -158,20 +158,8 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 order-md-1 order-1">
-                
-                @foreach($dataIndex as $itemIndex)
-                    <div class="blog__details__text">
-                        <img src="{{$itemIndex -> Image}}" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
-                        <div class="tm-popular-item-description">
-                    <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">
-                    </span>{{$itemIndex -> Judul}}</h3><hr class="tm-popular-item-hr">
-                    <p align="justify">{{$itemIndex -> Pengertian}}<br></p>
-                    <p align="justify">{{$itemIndex -> Penyebab}}<br></p>
-                    <p align="justify">{{$itemIndex -> Pencegahan}}<br></p>
-                    <p align="justify">{{$itemIndex -> Tips}}<br></p>
-                        </div>
-                    </div>              
-                @endforeach
+
+                    
 
                     <div class="blog__details__content">
                         <div class="row">

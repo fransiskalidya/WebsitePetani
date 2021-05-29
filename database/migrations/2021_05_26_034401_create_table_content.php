@@ -15,12 +15,12 @@ class CreateTableContent extends Migration
     {
         Schema::create('content', function (Blueprint $table) {
             $table->id();
-            $table->String('Judul');
-            $table->String('Image')->nullable();
-            $table->String('Pengertian');
-            $table->String('Penyebab');
-            $table->String('Pencegahan');
-            $table->String('Tips');
+            $table->Text('Judul');
+            $table->Text('Image')->nullable();
+            $table->Text('Pengertian');
+            $table->Text('Penyebab');
+            $table->Text('Pencegahan');
+            $table->Text('Tips');
             $table->timestamps();
         });
     }

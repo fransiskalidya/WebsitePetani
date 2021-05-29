@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\ContentController;
 use App\Http\Controllers\DataPetaniController;
+use App\Http\Controllers\ArticleController;
 use  Illuminate\Http\Request;
 
 
@@ -18,9 +19,8 @@ use  Illuminate\Http\Request;
 |
 */
 
-Route::get('/', function () {
-    return view('sebelum.index');
-});
+Route::get('/', [ContentController::class, 'index']);
+
 Route::get('/contact', function () {
     return view('sebelum.contact');
 });
@@ -35,6 +35,9 @@ Route::get('/inputData', function () {
 //     return view('sebelum.dataPetani.index');
 // });
 
+Route::get('/postContent', function () {
+    return view('sebelum.postContent');
+});
 
 Route::get('/create', function () {
     return view('contents.create');
@@ -60,3 +63,4 @@ Route::resource('dataPetani',  DataPetaniController::class);
 // Route::get('dataPetani/tampil', DataPetaniController::class, 'tampil')->name('dataPetani.tampil');
 
 Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'invoice']);
+Route::resource('article', ArticleController::class);
