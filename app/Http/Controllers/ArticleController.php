@@ -15,7 +15,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $article = Article::all();
+        $article = Article::find($id);
         return view('sebelum.article.detail', ['article' => $article]);
     }
 

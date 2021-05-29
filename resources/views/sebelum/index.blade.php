@@ -95,11 +95,11 @@
                                 <li><a href="#">E (10)</a></li>
                             </ul> --}}
                         </div>
-                       
+                        @foreach($dataIndex as $articleContent)
                         <div class="blog__sidebar__item">
                             <h4>Artikel terbaru</h4>
                             <div class="blog__sidebar__recent">
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{route('article.show', $articleContent->id)}}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
                                         <img src="img/blog/sidebar/sr-1.jpg" alt="">
                                     </div>
@@ -143,7 +143,7 @@
                                 </a>
                             </div>
                         </div>
-                        
+                        @endforeach
                         {{-- <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">
