@@ -18,7 +18,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <a class="nav-link" href="{{'/dashboard'}}">
+        <a class="nav-link" href="{{'/home'}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -40,7 +40,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{'/postContent'}}">
+        <a class="nav-link collapsed" href="{{'/content'}}">
           <i class="fas fa-fw fa-folder"></i>
           <span>Post Content</span>
         </a>
@@ -56,6 +56,11 @@
         <a class="nav-link" href="{{ route('register') }}">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Register</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{ route('dataPetani.index') }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Data Penerima Subsidi</span></a>
       </li>
 
       {{-- <li class="nav-item">

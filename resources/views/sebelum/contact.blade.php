@@ -18,7 +18,7 @@
                             {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
                             <li><a href="{{'/'}}">Home</a></li>
                             <li class="active"><a href="{{'/contact'}}">Contact</a></li>
-                            <li><a href="{{'/inputData'}}">Data Penerima Subsidi</a></li>
+                            <li><a href="{{route('dataPetani.tampil')}}">Data Penerima Subsidi</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                     </nav>

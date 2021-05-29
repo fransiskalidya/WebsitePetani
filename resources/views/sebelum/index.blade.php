@@ -17,7 +17,7 @@
                         {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
                         <li class="active"><a href="{{'/'}}">Home</a></li>
                         <li ><a href="{{'/contact'}}">Contact</a></li>
-                        <li><a href="{{'/inputData'}}">Data Penerima Subsidi</a></li>
+                        <li><a href="{{route('dataPetani.tampil')}}">Data Penerima Subsidi</a></li>
                         <li><a href="{{ route('login') }}">Login</a></li>
                     </ul>
                 </nav>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7 order-md-1 order-1">
-                
+
                 @foreach($dataIndex as $itemIndex)
                     <div class="blog__details__text">
                         <img src="{{$itemIndex -> Image}}" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
@@ -170,7 +170,7 @@
                     <p align="justify">{{$itemIndex -> Pencegahan}}<br></p>
                     <p align="justify">{{$itemIndex -> Tips}}<br></p>
                         </div>
-                    </div>              
+                    </div>
                 @endforeach
 
                     <div class="blog__details__content">

@@ -59,8 +59,9 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('content',  ContentController::class);
+
+Route::get('dataPetani/tampil', [App\Http\Controllers\DataPetaniController::class, 'tampil'])->name('dataPetani.tampil');
 Route::resource('dataPetani',  DataPetaniController::class);
-// Route::get('dataPetani/tampil', DataPetaniController::class, 'tampil')->name('dataPetani.tampil');
 
 Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'invoice']);
 Route::resource('article', ArticleController::class);

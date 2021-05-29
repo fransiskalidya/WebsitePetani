@@ -14,7 +14,7 @@
                     <div class="breadcrumb__text">
                         <h2>Keranjang Transaksi</h2>
                         <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
+                            <a href="{{'/home'}}">Home</a>
                             <span>Keranjang Transaksi</span>
                         </div>
                     </div>
