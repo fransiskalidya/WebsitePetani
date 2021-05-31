@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\ContentController;
 use App\Http\Controllers\DataPetaniController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\PengumumanController;
+
 use  Illuminate\Http\Request;
 
 
@@ -65,3 +67,5 @@ Route::resource('dataPetani',  DataPetaniController::class);
 
 Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'invoice']);
 Route::resource('article', ArticleController::class);
+
+Route::resource('pengumuman',  PengumumanController::class);
