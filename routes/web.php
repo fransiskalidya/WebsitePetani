@@ -69,3 +69,8 @@ Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'inv
 Route::resource('article', ArticleController::class);
 
 Route::resource('pengumuman',  PengumumanController::class);
+
+Route::get('/artikel1', [ArticleController::class, 'artikel1']);
+Route::get('/artikel2', [ArticleController::class, 'artikel2']);
+Route::get('/artikel3', [ArticleController::class, 'artikel3']);
+
