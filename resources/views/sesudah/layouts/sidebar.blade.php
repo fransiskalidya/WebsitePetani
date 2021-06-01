@@ -40,7 +40,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="{{'/content'}}">
+        <a class="nav-link collapsed" href="{{'/postContent'}}">
           <i class="fas fa-fw fa-folder"></i>
           <span>Post Content</span>
         </a>
