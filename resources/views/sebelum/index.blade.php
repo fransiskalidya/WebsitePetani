@@ -226,8 +226,7 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> Juni 01,2021</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
+                                <li><i class="fa fa-calendar-o"></i> Mei 01,2021</li>
                             </ul>
                             <h5><a href="{{ url('/populer1') }}">Cara dan Dosis Pemupukan yang Tepat Dapat Melipatgandakan Hasil Jagung Petani</a></h5>
                             <p>Jagung merupakan komuditas penting kedua setelah padi karena jagung dapat digunakan sebagai bahan baku pangan dan pakan...</p>
@@ -241,8 +240,7 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            <li><i class="fa fa-calendar-o"></i> Mei 10,2021</li>
                             </ul>
                             <h5><a href="{{ url('/populer2') }}">Peningkatan Produtivitas Padi Sawah Melalui Penerapan Teknologi PTT</a></h5>
                             <p>Meningkatan produksi padi melalui perluasan areal tanam tidak dapat terus menerus dilakukan karena luas lahan pertanian...</p>
@@ -256,8 +254,7 @@
                         </div>
                         <div class="blog__item__text">
                             <ul>
-                                <li><i class="fa fa-calendar-o"></i> May 4,2019</li>
-                                <li><i class="fa fa-comment-o"></i> 5</li>
+                            <li><i class="fa fa-calendar-o"></i> Mei 15,2021</li>
                             </ul>
                             <h5><a href="{{ url('/populer3') }}">Budidaya Padi Gogo</a></h5>
                             <p>Padi merupakan komoditas tanaman pangan penting karena menjadi bahan makanan pokok...</p>
