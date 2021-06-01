@@ -95,47 +95,46 @@
                                 <li><a href="#">E (10)</a></li>
                             </ul> --}}
                         </div>
-                        @foreach($dataIndex as $articleContent)
                         <div class="blog__sidebar__item">
                             <h4>Artikel terbaru</h4>
                             <div class="blog__sidebar__recent">
-                                <a href="{{route('article.show', $articleContent->id)}}" class="blog__sidebar__recent__item">
+                                <a href="{{ url('/artikel1') }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-1.jpg" alt="">
+                                        <img src="img/blog/sidebar/artikel1.jpg" alt="" height="80px" width="70px">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>Teknologi Budaya Stroberi<br /> di Lahan sempit</h6>
+                                        <h6>Peluang, Tantangan, dan Strategi<br /> Dalam Pengembangan Sistem Pertanian Organik</h6>
                                         <ul>
                                             <li>
-                                                <span>MAR 05, 2019</span> </br>
+                                                <span>Juni 01, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{ url('/artikel2') }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-2.jpg" alt="">
+                                        <img src="img/blog/sidebar/artikel2.jpg" alt="" height="80px" width="70px">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>Kapan Waktu yang Tepat<br /> Menanam Bibit Buah?</h6>
+                                        <h6>Tikus Sawah (Rattus-Rattus Argentiventer) dan<br /> Pengaruhnya Terhadap Pola Kerusakan Padi</h6>
                                         <ul>
                                             <li>
-                                                <span>MAR 05, 2019</span> </br>
+                                                <span>Juni 01, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>
                                     </div>
                                 </a>
-                                <a href="#" class="blog__sidebar__recent__item">
+                                <a href="{{ url('/artikel3') }}" class="blog__sidebar__recent__item">
                                     <div class="blog__sidebar__recent__item__pic">
-                                        <img src="img/blog/sidebar/sr-3.jpg" alt="">
+                                        <img src="img/blog/sidebar/artikel3.jpg" alt="" height="80px" width="70px">
                                     </div>
                                     <div class="blog__sidebar__recent__item__text">
-                                        <h6>Menjerat Si Hama Jambu<br />Merah</h6>
+                                        <h6>Petunjuk Lapangan Pengendalian<br />Hama Wereng Coklat</h6>
                                         <ul>
                                             <li>
-                                                <span>MAR 05, 2019</span> </br>
+                                                <span>Juni 01, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>
@@ -143,7 +142,7 @@
                                 </a>
                             </div>
                         </div>
-                        @endforeach
+                       
                         {{-- <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">
