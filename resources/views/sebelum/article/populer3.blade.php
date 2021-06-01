@@ -160,32 +160,18 @@
                 <div class="col-lg-8 col-md-7 order-md-1 order-1">
 
                     <div class="blog__details__text">
-                        <img src="img/blog/details/artikel2.jpg" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
+                        <img src="img/blog/details/populer3.jpg" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
                         <div class="tm-popular-item-description">
                     <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">
-                    </span>Tikus Sawah (Rattus-Rattus Argentiventer) dan Pengaruhnya Terhadap Pola Kerusakan Padi</h3><hr class="tm-popular-item-hr">
-                    <p align="justify">Salah satu kendala utama dalam budidaya tanaman padi adalah adanya serangan hama tikus (Rattus-rattus spp.), terutama pada musim tanam gadu atau musim kemarau. Berdasarkan peringkat 
-                                       yang dibuat oleh Gedes (Singleton & Petch, 1994) hama tikus di Indonesia menempati urutan pertama pada pertanaman padi, kemudian diikuti oleh penggerek batang, wereng coklat, dan walang 
-                                       sangit. Peringkat tersebut juga memperlihatkan bahwa di Asia Tenggara tikus juga menempati urutan pertama, diikuti oleh hama-hama utama yang lain dengan peringkat yang hampir sama. 
-                                       Berdasarkan laporan dari Laboratorioum pengamatan Hama dan Penyakit Trimurjo (1999), di Lampung Tengah dari musim tanam 1989/1990 sampai 1999/2000 ada 20 musim tanam, ternyata 19 musim 
-                                       tanam di antaranya terserang tikus dengan intensitas ringan sampai puso. Dengan kata lain, pada hampir semua musim tanam serangan tikus menjadi masalah dalam budidaya padi. Selanjutnya 
-                                       dilaporkan bahwa dari 19 musim tanam tersebut memang tidak semua kecamatan terserang, tetapi hal ini mengindikasikan bahwa serangan hama tikus pada pertanaman padi perlu untuk dikaji lebih lanjut. 
-                                       Kerugian yang diakibatkan oleh serangan tikus.<br></p>
-                    <p align="justify">Pada pengamatan adaptasi berbagai varietas padi di tanah rawa tahun 2000 diperoleh hasil berupa pola kerusakan hasil yang khas yang disebabkan oleh serangan tikus sawah. Pertanaman yang 
-                                       terdiri atas enam varietas padi pada beberapa petak tersebut menunjukkan adanya pola kerusakan yang selalu mengikuti jenis atau varietas padi Dodokan. Varietas padi yang ditanam adalah Atomita, 
-                                       Cempo Lombok, IR64, Ciliwung, Dodokan, dan Cianjur.</br></p>
-                    <p align="justify">Pada tingkat serangan yang tinggi, tikus hanya menyisakan tanaman selebar satu meter dari pematang mengikuti arah pematang tersebut. Pola kerusakan yang ditimbulkan masih mirip dengan pola kerusakan 
-                                       yang umum (mirip stadion). Pernah terjadi hal yang menarik ketika varietas Dodokan ditanam membentuk satu baris lurus ternyata kerusakan oleh tikus terjadi sampai dengan rumpun yang berdekatan dengan 
-                                       pematang. Artinya tikus ternyata juga mau menyerang rumpun padi yang berada dekat dengan pematang kemungkinan karena tikus menyenangi varietas Dodokan. Bahkan yang lebih menarik adalah, pada musim tanam gadu 2002, 
-                                       di Lampung Tengah khususnya Kecamatan Punggur, serangan tikus pada fase vegetatif tidak menyisakan tanaman sama sekali (puso). Berdasarkan fakta di atas maka sangat mungkin untuk melakukan rekayasa terhadap perilaku 
-                                       tikus dalam menyerang atau merusak pertanaman padi, misalnya apakah pola umum kerusakan tanaman padi memang tetap (konsisten) menyerupai stadion sepakbola jika di suatu petak ditanami lebih dari satu varietas. 
-                                       Artinya apakah perilaku tikus sawah dalam merusak pertanaman padi bisa dipengaruhi oleh faktor yang lain, misalnya saja adalah kesukaan (preferensi) terhadap varietas tertentu<br></p>
-                    <p align="justify">Tikus lebih menyenangi daerah tengah petakan karena lebih aman dari pengganggu, contohnya adalah predator, kucing misalnya. Kucing dan beberapa predator lainnya tidak akan masuk ke dalam petakan sawah jika kondisi petakan 
-                                       berair. Pernah terjadi hal yang menarik pada musim tanam gadu 2002, serangan tikus tidak menyisakan tanaman (rumpun) sama sekali, jadi serangan sampai di daerah pinggir pematang. Penyebab mengapa tikus memperlihatkan perilaku 
-                                       makan yang demikian perlu diteliti lebih lanjut. Bisa saja hal ini disebabkan oleh kondisi pengairan yang kurang mencukupi untuk pertanaman padi. Kedua, Serangan tikus yang terjadi di rumpun padi yang berada di bagian tengah petakan 
-                                       sawah mungkin disebabkan oleh pengaruh (kadar) CO2 yang lebih tinggi di bagian tersebut. Tanaman menghasilkan gas CO2 pada malam hari dan gas ini akan terperangkap oleh rimbunnya pertanaman padi karena terjadinya turbulensi udara, berbeda 
-                                       keadaannya dengan daerah sekitar pematang yang sangat mudah bagi CO2 untuk bergerak. Berdasarkan hasil penelitian, tikus sangat sensitif terhadap kandungan dan laju aliran CO2 di suatu tempat (Niel et al., 2008), bahkan terhadap tipe atau 
-                                       kualitas air (Holm & Ladewig, 2006) sehingga tempat tersebut menjadi disenangi atau justru tidak disenangi oleh tikus. </br></p>
+                    </span>Budidaya Padi Gogo</h3><hr class="tm-popular-item-hr">
+                    <p align="justify">Padi merupakan komoditas tanaman pangan penting karena menjadi bahan makanan pokok bagi sebagian besar masyarakat Indonesia. Padi tidak hanya dibudayakan di lahan sawah, tetapi juga dapat ditanam di lahan kering. Untuk mengembangkan padi di lahan kering perlu dilakukan dengan pemanfaatan varietas unggul baru (VUB) 
+                                       yang mampu beradaptasi di lahan kering. Badan Litbang Pertanian telah melepas beberapa varietas padi gogo yang memiliki potensi hasil tinggi seperti Inpago 11 Agritan dan Rindang 1 Agritan.<br></p>
+                    <p align="justify">Penanaman padi gogo ukup dengan membabat tunggul jerami dari tanaman padi sebelumnnya. Benih yang akan digunakan direndam terlebih dahulu di dalam air selama 24 jam kemudian dikeringanginkan. Setelah itu, benih diberi perlakuan insektisida dengan dosis 1 botol (12.5 ml) untuk 5 kg benih padi, kemudian diperam di dalam karung selama 36 – 48 
+                                       jam sampai keluar titik tumbuh akar. Benih selanjutnya ditanam dengan cara tajuk dan setiap lubang tanam diisi dengan benih sebanyak 3 – 4 biji. Lubang tanam selanjutnya di tutup dengan tanah agar tidak dimakan burung. Sistem tanam menggunakan jajar legowo dengan jarak tanam 50 x 25 x 12.5 cm.<br></p>
+                    <p align="justify">Pupuk yang digunakan terdiri dari pupuk NPK Phonska dengan dosis 300 kg/ha dan pupuk Urea dengan dosis 200 kg/ha, dilakukan dengan cara sebar di antara baris tanaman legowo dan lahan dalam kondisi lembab. Pemupukan pertama terdiri dari 200 kg NPK dan 50 kg Urea, dilakukan pada saat tanaman padi berumur 15 hari setelah tajuk. Pemupukan ke dua 
+                                       terdiri dari 50 kg NPK dan 100 kg Urea, dilakukan pada umur 35 hari setelah tajuk, kemudian pemupukan ke tiga dilakukan pada tanaman padi berumur 55 hari dengan dosis 50 kg NPK dan 50 kg Urea. Pengairan, penyiangan, dan pengendalian Organisme Pengganggu Tumbuhan (OPT) dilakukan berdasarkan hasil monitoring. <br></p>
+                    <p align="justify">Berdasarkan hasil pengamatan, VUB Inpago 11 dan Rindang mendapat serangan hama berupa burung pada saat fase pengisian hingga pemasakan. Padi varietas Inpago 11 terlihat lebih tahan dari serangan burung jika dibandingkan dengan varietas Rindang. Hal ini disebabkan varietas Inpago 11 memiliki bentuk daun bendera yang tinggi dan tegak di atas malai, 
+                                       sehingga tidak mudah diserang oleh burung. Sebagai upaya pengendalian terhadap serangan burung maka dilakukan pemasangan jaring pada bagian atas tanaman.<br></p>
                         </div>
                     </div>
 
@@ -225,8 +211,8 @@
     </section>
     <!-- Blog Details Section End -->
 
-    <!-- Related Blog Section Begin -->
-    <section class="related-blog spad">
+   <!-- Related Blog Section Begin -->
+   <section class="related-blog spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

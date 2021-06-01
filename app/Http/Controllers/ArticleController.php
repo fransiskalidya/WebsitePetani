@@ -27,5 +27,20 @@ class ArticleController extends Controller
     {
         return view('sebelum.article.artikel3');
     }
+
+    public function populer1()
+    {
+        return view('sebelum.article.populer1');
+    }
+
+    public function populer2()
+    {
+        return view('sebelum.article.populer2');
+    }
+
+    public function populer3()
+    {
+        return view('sebelum.article.populer3');
+    }
 }
        

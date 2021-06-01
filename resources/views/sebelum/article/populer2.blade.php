@@ -160,32 +160,25 @@
                 <div class="col-lg-8 col-md-7 order-md-1 order-1">
 
                     <div class="blog__details__text">
-                        <img src="img/blog/details/artikel2.jpg" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
+                        <img src="img/blog/details/populer2.jpg" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
                         <div class="tm-popular-item-description">
                     <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">
-                    </span>Tikus Sawah (Rattus-Rattus Argentiventer) dan Pengaruhnya Terhadap Pola Kerusakan Padi</h3><hr class="tm-popular-item-hr">
-                    <p align="justify">Salah satu kendala utama dalam budidaya tanaman padi adalah adanya serangan hama tikus (Rattus-rattus spp.), terutama pada musim tanam gadu atau musim kemarau. Berdasarkan peringkat 
-                                       yang dibuat oleh Gedes (Singleton & Petch, 1994) hama tikus di Indonesia menempati urutan pertama pada pertanaman padi, kemudian diikuti oleh penggerek batang, wereng coklat, dan walang 
-                                       sangit. Peringkat tersebut juga memperlihatkan bahwa di Asia Tenggara tikus juga menempati urutan pertama, diikuti oleh hama-hama utama yang lain dengan peringkat yang hampir sama. 
-                                       Berdasarkan laporan dari Laboratorioum pengamatan Hama dan Penyakit Trimurjo (1999), di Lampung Tengah dari musim tanam 1989/1990 sampai 1999/2000 ada 20 musim tanam, ternyata 19 musim 
-                                       tanam di antaranya terserang tikus dengan intensitas ringan sampai puso. Dengan kata lain, pada hampir semua musim tanam serangan tikus menjadi masalah dalam budidaya padi. Selanjutnya 
-                                       dilaporkan bahwa dari 19 musim tanam tersebut memang tidak semua kecamatan terserang, tetapi hal ini mengindikasikan bahwa serangan hama tikus pada pertanaman padi perlu untuk dikaji lebih lanjut. 
-                                       Kerugian yang diakibatkan oleh serangan tikus.<br></p>
-                    <p align="justify">Pada pengamatan adaptasi berbagai varietas padi di tanah rawa tahun 2000 diperoleh hasil berupa pola kerusakan hasil yang khas yang disebabkan oleh serangan tikus sawah. Pertanaman yang 
-                                       terdiri atas enam varietas padi pada beberapa petak tersebut menunjukkan adanya pola kerusakan yang selalu mengikuti jenis atau varietas padi Dodokan. Varietas padi yang ditanam adalah Atomita, 
-                                       Cempo Lombok, IR64, Ciliwung, Dodokan, dan Cianjur.</br></p>
-                    <p align="justify">Pada tingkat serangan yang tinggi, tikus hanya menyisakan tanaman selebar satu meter dari pematang mengikuti arah pematang tersebut. Pola kerusakan yang ditimbulkan masih mirip dengan pola kerusakan 
-                                       yang umum (mirip stadion). Pernah terjadi hal yang menarik ketika varietas Dodokan ditanam membentuk satu baris lurus ternyata kerusakan oleh tikus terjadi sampai dengan rumpun yang berdekatan dengan 
-                                       pematang. Artinya tikus ternyata juga mau menyerang rumpun padi yang berada dekat dengan pematang kemungkinan karena tikus menyenangi varietas Dodokan. Bahkan yang lebih menarik adalah, pada musim tanam gadu 2002, 
-                                       di Lampung Tengah khususnya Kecamatan Punggur, serangan tikus pada fase vegetatif tidak menyisakan tanaman sama sekali (puso). Berdasarkan fakta di atas maka sangat mungkin untuk melakukan rekayasa terhadap perilaku 
-                                       tikus dalam menyerang atau merusak pertanaman padi, misalnya apakah pola umum kerusakan tanaman padi memang tetap (konsisten) menyerupai stadion sepakbola jika di suatu petak ditanami lebih dari satu varietas. 
-                                       Artinya apakah perilaku tikus sawah dalam merusak pertanaman padi bisa dipengaruhi oleh faktor yang lain, misalnya saja adalah kesukaan (preferensi) terhadap varietas tertentu<br></p>
-                    <p align="justify">Tikus lebih menyenangi daerah tengah petakan karena lebih aman dari pengganggu, contohnya adalah predator, kucing misalnya. Kucing dan beberapa predator lainnya tidak akan masuk ke dalam petakan sawah jika kondisi petakan 
-                                       berair. Pernah terjadi hal yang menarik pada musim tanam gadu 2002, serangan tikus tidak menyisakan tanaman (rumpun) sama sekali, jadi serangan sampai di daerah pinggir pematang. Penyebab mengapa tikus memperlihatkan perilaku 
-                                       makan yang demikian perlu diteliti lebih lanjut. Bisa saja hal ini disebabkan oleh kondisi pengairan yang kurang mencukupi untuk pertanaman padi. Kedua, Serangan tikus yang terjadi di rumpun padi yang berada di bagian tengah petakan 
-                                       sawah mungkin disebabkan oleh pengaruh (kadar) CO2 yang lebih tinggi di bagian tersebut. Tanaman menghasilkan gas CO2 pada malam hari dan gas ini akan terperangkap oleh rimbunnya pertanaman padi karena terjadinya turbulensi udara, berbeda 
-                                       keadaannya dengan daerah sekitar pematang yang sangat mudah bagi CO2 untuk bergerak. Berdasarkan hasil penelitian, tikus sangat sensitif terhadap kandungan dan laju aliran CO2 di suatu tempat (Niel et al., 2008), bahkan terhadap tipe atau 
-                                       kualitas air (Holm & Ladewig, 2006) sehingga tempat tersebut menjadi disenangi atau justru tidak disenangi oleh tikus. </br></p>
+                    </span>Peningkatan Produtivitas Padi Sawah Melalui Penerapan Teknologi PTT</h3><hr class="tm-popular-item-hr">
+                    <p align="justify">Peningkatan produksi padi melalui perluasan areal tanam tidak dapat terus menerus dilakukan karena luas lahan pertanian yang terus berkurang akibat tingginya alih fungsi lahan, sehingga upaya yang lebih memungkinkan untuk dilakukan adalah mendorong peningkatan produktivitas. Konsekuensi dari peningkatan produksi 
+                                       dengan penekanan pada peningkatan produktivitas adalah : 1). tersedianya teknologi spesifik lokasi yang efektif, efisien dan tidak merusak lingkungan; 2). penerapan teknologi rekomendasi oleh petani secara mandiri, bersifat masal dan berkelanjutan. Dari aspek penyediaan teknologi rekomendasi saat ini telah diciptakan 
+                                       teknologi produksi padi dengan pendekatan Pengelolaan Tanaman Terpadu (PTT) yang telah teruji mampu meningkatkan produktivitas padi hingga 15%.  Persoalannya teknologi dengan pendekatan yang relative baru tidak mudah untuk diadopsi petani secara meluas dan berkelanjutan dalam kurun waktu yang singkat. Dalam hubungan 
+                                       inilah kegiatan pendampingan pengawalan terhadap petani pada penerapan teknologi menjadi sangat penting untuk dilakukan.<br></p>
+                    <p align="justify">Kegiatan pendampingan penerapan teknologi merupakan upaya penyebar luasan (diseminasi) teknologi yang dilaksanakan secara terencana, sistematis dan terkoordinasi agar petani memperoleh bimbingan langsung baik dari peneliti maupun penyuluh sebagai sumber teknologi guna memudahkan, mempercepat dan memperluas adopsi. 
+                                       Melalui kegiatan pendampingan, petani akan mendapatkan bimbingan dalam menentukan komponen teknologi yang paling sesuai dengan kebutuhan di daerah setempat (spesifik lokasi), cara menerapkan teknologi yang benar, memudahkan petani untuk berkonsultasi terkait permasalahan dan cara mengatasi masalah yang dihadapi. 
+                                       Dengan demikian petani benar-benar menerapkan teknologi spesifik lokasi yang dilakukan dengan tepat sehingga mampu meningkatkan produktivitas dan pendapatan petani secara nyata dan pada gilirannya akan dapat memotivasi petani untuk mengadopsi teknologi secara berkelanjutan.<br></p>
+                    <p align="justify">Hasil pertanian dengan teknologi PTT menunjukkan bahwa dengan penerapan teknologi PTT mampu meningkatkan produktivitas sebesar 20% untuk Inpari 32 dan 25% untuk Inpari 33 dibandingkan dengan produktivitas padi inpari 32 dengan budidaya padi yang biasa diterapkan petani. Hasil penelitian Sirappa (2011), melaporkan  
+                                       penerapan inovasi teknologi PTT melalui penggunaan varietas unggul baru dengan sistem tanam legowo memberikan hasil gabah yang cukup tinggi dibandingkan dengan teknologi yang diterapkan petani. Varietas padi Memberamo, Mekongga, Cigeulis yang ditanam dengan sistem legowo rata-rata memberikan hasil gabah lebih tinggi sebesar (5,5 - 8,3 t/ha) 
+                                       dibandingkan dengan teknologi petani (non PTT) yang hanya sekitar 4 t/ha. Penelitian Rusmawan et al. (2011), menunjukkan bahwa produktivitas padi sawah di Bangka Belitung dengan penerapan PTT padi sawah dapat mencapai 8, t/ha varietas Mekongga dan 5,1 t/ha varietas Ciherang. Komponen teknologi harus saling melengkapi, bila perlu dilihat 
+                                       kemungkinan adanya efek sinergisme antara komponen. Arsyad (2011), menyatakan bahwa inovasi teknologi yang berpeluang tinggi akan diadopsi petani adalah Varietas Unggul Baru. Hal ini disebabkan penggunaan VUB secara teknis mudah dilakukan, daya hasil tinggi, tahan terhadap hama penyakit tertentu.<br></p>
+                    <p align="justify">Peningkatan produktivitas yang diperoleh petani kooperator pada lokasi pendampingan terjadi karena teknologi budidaya yang diterapkan oleh petani kooperator terutama pada komponen jarak tanam yang menggunakan jajar legowo 2:1. Selain itu, penerapan pemupukan berimbang dan waktu pemupukan yang tepat  berperan cukup 
+                                       penting terhadap peningkatan produktivitas. Penerapan pemupukan berimbang ditujukan untuk menyesuaikan kebutuhan tanaman dengan ketersediaan hara di dalam tanah. Dosis pupuk yang diberikan oleh petani kooperator sesuai dengan rekomendasi desa setempat dan waktu pemberian pupuk sesuai dengan kebutuhan tanaman sehingga penyerapan unsur 
+                                       hara oleh tanaman dapat maksimal untuk menunjang pertumbuhan dan perkembangan tanaman, sedangkan pada petani non kooperator pemupukan dilakukan tidak di dasarkan pada jumlah/dosis yang dibutuhkan serta waktu pemupukan yang tidak disesuaikan kebutuhan tanaman sehingga pemanfaatan pupuk oleh tanaman menjadi tidak efisien, sesuai dengan hasil 
+                                       kajian Fachrista dan Sarwendah (2014) bahwa komponen utama PTT yang langsung dapat di adopsi oleh petani adalah penggunaan VUB, benih bermutu dan berlabel serta penggunaan bahan organik, sedangkan untuk komponen pendukung lainnya yang terdiri atas tanam bibit muda, tanam 1-3 bibit/lubang dan panen tepat waktu.<br></p>
                         </div>
                     </div>
 
@@ -225,8 +218,8 @@
     </section>
     <!-- Blog Details Section End -->
 
-    <!-- Related Blog Section Begin -->
-    <section class="related-blog spad">
+   <!-- Related Blog Section Begin -->
+   <section class="related-blog spad">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

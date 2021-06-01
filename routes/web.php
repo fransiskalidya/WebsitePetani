@@ -74,3 +74,7 @@ Route::get('/artikel1', [ArticleController::class, 'artikel1']);
 Route::get('/artikel2', [ArticleController::class, 'artikel2']);
 Route::get('/artikel3', [ArticleController::class, 'artikel3']);
 
+Route::get('/populer1', [ArticleController::class, 'populer1']);
+Route::get('/populer2', [ArticleController::class, 'populer2']);
+Route::get('/populer3', [ArticleController::class, 'populer3']);
+
