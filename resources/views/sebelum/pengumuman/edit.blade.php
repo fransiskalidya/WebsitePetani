@@ -1,78 +1,33 @@
-@extends('sebelum.layouts.app')
-
-    <!-- Header Section Begin -->
-    <header class="header">
+<html>
+    <head>
+        <title>Sistem Informasi Mahasiswa</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </head>
+    <body>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="header__logo">
-                        <h2 class="gold-text tm-welcome-header-2">
-                            <span style="color: 7FAD39">PENGUMUMAN</span>
-                            
-                        </h2>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <nav class="header__menu">
-                        <ul>
-                            {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
-                            <li ><a href="{{'/'}}">Home</a></li>
-                            <li ><a href="{{'/contact'}}">Contact</a></li>
-                            <li ><a href="{{'/inputData'}}">Data Penerima Subsidi</a></li>
-                            <li><a href="{{ route('login') }}">Login</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <div class="humberger__open">
-                <i class="fa fa-bars"></i>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section End -->
-
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="img/breadcrumb.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="breadcrumb__text">
-                        <h2>Input Data Pengumuman</h2>
-                        <div class="breadcrumb__option">
-                            <a href="./index.html">Home</a>
-                            <span>Input Data Pengumuman</span>
+            <div class="container mt-5">
+                <div class="row justify-content-center align-items-center">
+                    <div class="card" style="width: 24rem;">
+                        <div class="card-header">
+                            Edit Data Pengumuman
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Breadcrumb Section End -->
-
-    {{-- Input Data section begin --}}
-    <section class="featured spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title">
-                        <h2>Input Data Pengumuman</h2>
-                    </div>
-                    <div class="card-body">
-                        @if ($errors->any())
+                        <div class="card-body">
+                            @if ($errors->any())
                             <div class="alert alert-danger">
                                 <strong>Whoops!</strong> There were some problems with your input.<br><br>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
-                            </div>
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
                         @endif
-                    </div>
-                    <form method="post" action="{{ route('pengumuman.update', $data->id) }}" id="myForm">
-                        @csrf
-                        @method('PUT')
-                        <div class="featured__controls">
+                        <form method="post" action="{{ route('pengumuman.update', $data->id) }}" id="myForm">
+                            @csrf
+                            @method('PUT')
                             <div class="form-group">
                                 <label for="id">Id : </label>
                                 <input type="text" name="id" class="form-control" id="id" value="{{$data->id}}" aria-describedby="id" >
@@ -85,16 +40,16 @@
 
                             <div class="form-group">
                                 <label for="Isi">Isi</label>
-                                <input type="Isi" name="alamat" class="form-control" id="alamat" value="{{$data->alamat}}" aria-describedby="alamat" >
+                                <input type="Isi" name="Isi" class="form-control" id="alamat" value="{{$data->Isi}}" aria-describedby="alamat" >
                             </div>
 
                             <br><br>
                             <button type="submit" class="btn btn-primary">Submit</button>
-
-
-                        </div>
+                        </form>
                     </div>
                 </div>
-
-
-    {{-- Input Data section end --}}
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

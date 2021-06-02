@@ -38,12 +38,17 @@
                     <div class="hero__categories">
                         <div class="hero__categories__all">
                             <i class="fa fa-bars"></i>
-                            <span>Pengumuman</span>
-                        </div>
-                        <ul>
-                            <li><a href="#">Sosialisasi Penanaman Lombok</a></li>
-                            <li><a href="#">Sosialisasi Alat Perontok Padi</a></li>
-                            <li><a href="#">Jadwal Pembagian Pupuk bulan Mei</a></li>
+                            <span><a href="#" style="color: white">Pengumuman</a>
+                            </span>
+                    </div>
+                    <ul>
+                        @foreach ($pgm as $pgm)
+                        <li><a href="{{ route('pengumuman.show',$pgm->id) }}">{{$pgm->Judul}}</a></li>
+
+                        @endforeach
+                            {{-- <li><a href="#">Sosialisasi Penanaman Lombok</a></li> --}}
+                            {{-- <li><a href="#">Sosialisasi Alat Perontok Padi</a></li>
+                            <li><a href="#">Jadwal Pembagian Pupuk bulan Mei</a></li> --}}
                             {{-- <li><a href="#">Fresh Berries</a></li>
                             <li><a href="#">Ocean Foods</a></li>
                             <li><a href="#">Butter & Eggs</a></li>
@@ -142,7 +147,7 @@
                                 </a>
                             </div>
                         </div>
-                       
+
                         {{-- <div class="blog__sidebar__item">
                             <h4>Search By</h4>
                             <div class="blog__sidebar__item__tags">

@@ -53,9 +53,9 @@ Route::get('/dashboard', function () {
     return view('sesudah.dashboard');
 });
 
-// Route::get('dataPetani/tampil', function () {
-//     return view('sebelum.dataPetani.tampil');
-// });
+Route::get('inputPengumuman', function () {
+    return view('sebelum.pengumuman.inputData');
+});
 
 Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -77,4 +77,3 @@ Route::get('/artikel3', [ArticleController::class, 'artikel3']);
 Route::get('/populer1', [ArticleController::class, 'populer1']);
 Route::get('/populer2', [ArticleController::class, 'populer2']);
 Route::get('/populer3', [ArticleController::class, 'populer3']);
-

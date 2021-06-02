@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Content;
+use App\Models\Pengumuman;
 
 class ContentController extends Controller
 {
     public function index()
     {
-        $content = Content::all();
-        return view('sebelum.index', ['dataIndex' => $content]);
+        $pgm = Pengumuman::all();
+        $dataIndex = Content::all();
+        return view('sebelum.index', compact('dataIndex', 'pgm'));
     }
     /**
      * Show the form for creating a new resource.
@@ -21,7 +23,7 @@ class ContentController extends Controller
     {
         return view('sebelum.postContent');
     }
-    
+
 
     /**
      * Store a newly created resource in storage.
@@ -55,9 +57,9 @@ class ContentController extends Controller
      */
     public function show($id)
     {
-       //Menampilkan detail data dengan menemukan id Content
-    $Content = Content::find($id);
-    return view('contents.detail', compact('Content'));  
+        //Menampilkan detail data dengan menemukan id Content
+        $Content = Content::find($id);
+        return view('contents.detail', compact('Content'));
     }
 
     /**
@@ -80,7 +82,7 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-       
+
         //
     }
 
