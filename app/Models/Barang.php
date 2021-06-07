@@ -17,8 +17,13 @@ class Barang extends Model
 
     ];
 
-    
-    public function datapetani(){
+
+    public function datapetani()
+    {
         return $this->belongsToMany(DataPetani::class, 'petani_barang', 'barang_id', 'petani_id')->withPivot('harga');
+    }
+    public function pesananDetail()
+    {
+        return $this->hasMany(PesananDetail::class);
     }
 }
