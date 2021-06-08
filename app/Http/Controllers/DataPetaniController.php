@@ -20,7 +20,7 @@ class DataPetaniController extends Controller
             $datas = DataPetani::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
         } else { // Jika tidak melakukan pencarian judul
             //fungsi eloquent menampilkan data menggunakan pagination
-            $datas = DataPetani::orderBy('id_petani', 'desc')->paginate(5); // Pagination menampilkan 5 data
+            $datas = DataPetani::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
         }
         return view('sebelum.dataPetani.index', compact('datas'));
     }
@@ -44,7 +44,7 @@ class DataPetaniController extends Controller
     public function store(Request $request)
     {
         DataPetani::create([
-            'id_petani' => $request->id_petani,
+            'id' => $request->id,
             'nama' => $request->nama,
             'alamat' => $request->alamat,
             'no_tlpn' => $request->no_tlpn,
@@ -62,9 +62,9 @@ class DataPetaniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id_petani)
+    public function show($id)
     {
-        $data = DataPetani::find($id_petani);
+        $data = DataPetani::find($id);
         return view('sebelum.dataPetani.detail', compact('data'));
     }
 
@@ -74,9 +74,9 @@ class DataPetaniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id_petani)
+    public function edit($id)
     {
-        $data = DataPetani::find($id_petani);
+        $data = DataPetani::find($id);
 
         return view('sebelum.dataPetani.edit', ['data' => $data]);
     }
@@ -88,10 +88,10 @@ class DataPetaniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id_petani)
+    public function update(Request $request, $id)
     {
-        $datas = DataPetani::find($id_petani);
-        $datas->id_petani = $request->id_petani;
+        $datas = DataPetani::find($id);
+        $datas->id = $request->id;
         $datas->nama = $request->nama;
         $datas->alamat = $request->alamat;
         $datas->no_tlpn = $request->no_tlpn;
@@ -108,9 +108,9 @@ class DataPetaniController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id_petani)
+    public function destroy($id)
     {
-        DataPetani::find($id_petani)->delete();
+        DataPetani::find($id)->delete();
         return redirect()->route('dataPetani.index')
             ->with('success', 'Data Berhasil Dihapus');
     }
@@ -121,15 +121,15 @@ class DataPetaniController extends Controller
             $datas = DataPetani::where('nama', 'like', "%" . $request->search . "%")->paginate(5);
         } else { // Jika tidak melakukan pencarian judul
             //fungsi eloquent menampilkan data menggunakan pagination
-            $datas = DataPetani::orderBy('id_petani', 'desc')->paginate(5); // Pagination menampilkan 5 data
+            $datas = DataPetani::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
         }
         return view('sebelum.dataPetani.tampil', compact('datas'));
     }
 
-    public function invoice($id_petani)
+    public function invoice($id)
     {
         $data_petani = DataPetani::with('barang')
-            ->where('id_petani', $id_petani)
+            ->where('id', $id)
             ->first();
         return view('sesudah.invoice', compact('data_petani'));
     }

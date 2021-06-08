@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Route;
 use  App\Http\Controllers\ContentController;
 use App\Http\Controllers\DataPetaniController;
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\KeranjangController;
+use App\Http\Controllers\PesanController;
 use App\Http\Controllers\PengumumanController;
 
 use  Illuminate\Http\Request;
@@ -29,6 +31,9 @@ Route::get('/contact', function () {
 Route::get('/keranjang', function () {
     return view('sebelum.keranjang');
 });
+
+Route::get('/produk', [KeranjangController::class, 'index'])->name('produk');
+
 Route::get('/inputData', function () {
     return view('sebelum.dataPetani.inputData');
 });
@@ -70,6 +75,14 @@ Route::resource('article', ArticleController::class);
 
 Route::resource('pengumuman',  PengumumanController::class);
 
+Route::get('/pesan/{id}', [PesanController::class, 'index']);
+Route::post('/pesan/{id}', [PesanController::class, 'pesan']);
+
+Route::get('check-out', [PesanController::class, 'check_out']);
+Route::delete('check-out/{id}', [PesanController::class, 'delete']);
+
+Route::get('konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
+
 Route::get('/artikel1', [ArticleController::class, 'artikel1']);
 Route::get('/artikel2', [ArticleController::class, 'artikel2']);
 Route::get('/artikel3', [ArticleController::class, 'artikel3']);
@@ -77,3 +90,4 @@ Route::get('/artikel3', [ArticleController::class, 'artikel3']);
 Route::get('/populer1', [ArticleController::class, 'populer1']);
 Route::get('/populer2', [ArticleController::class, 'populer2']);
 Route::get('/populer3', [ArticleController::class, 'populer3']);
+

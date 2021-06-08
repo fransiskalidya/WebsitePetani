@@ -11,7 +11,7 @@ class Pesanan extends Model
     protected $table = 'pesanan';
     public function dataPetani()
     {
-        return $this->belongsTo(DataPetani::class);
+        return $this->belongsTo('App\Models\DataPetani','id_datapetani', 'id');
     }
 
     public function pesananDetail()

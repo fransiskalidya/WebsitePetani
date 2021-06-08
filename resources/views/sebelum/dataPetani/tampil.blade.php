@@ -83,7 +83,7 @@
         @foreach ($datas as $data)
         <tr>
 
-            <td>{{ $data->id_petani }}</td>
+            <td>{{ $data->id }}</td>
             <td>{{ $data->nama }}</td>
             <td>{{ $data->alamat }}</td>
             <td>{{ $data->no_tlpn }}</td>

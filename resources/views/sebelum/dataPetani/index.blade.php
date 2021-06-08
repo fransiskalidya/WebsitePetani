@@ -221,14 +221,14 @@
                     @foreach ($datas as $data)
                     <tr>
 
-                        <td>{{ $data->id_petani }}</td>
+                        <td>{{ $data->id }}</td>
                         <td>{{ $data->nama }}</td>
                         <td>{{ $data->alamat }}</td>
                         <td>{{ $data->no_tlpn }}</td>
                         <td>
-                        <form action="{{ route('dataPetani.destroy',$data->id_petani) }}" method="POST">
-                            <a class="btn btn-info" href="{{ route('dataPetani.show',$data->id_petani) }}">Show</a>
-                            <a class="btn btn-primary" href="{{ route('dataPetani.edit',$data->id_petani) }}">Edit</a>
+                        <form action="{{ route('dataPetani.destroy',$data->id) }}" method="POST">
+                            <a class="btn btn-info" href="{{ route('dataPetani.show',$data->id) }}">Show</a>
+                            <a class="btn btn-primary" href="{{ route('dataPetani.edit',$data->id) }}">Edit</a>
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger">Delete</button>

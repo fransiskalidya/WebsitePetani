@@ -73,8 +73,8 @@
                         @csrf
                         <div class="featured__controls">
                             <div class="form-group">
-                                <label for="id_petani">Id Petani : </label>
-                                <input type="text" name="id_petani" class="form-control" id="id_petani" aria-describedby="id_petani" >
+                                <label for="id">Id Petani : </label>
+                                <input type="text" name="id" class="form-control" id="id" aria-describedby="id" >
                             </div>
 
                             <div class="form-group">

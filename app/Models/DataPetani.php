@@ -10,10 +10,10 @@ class DataPetani extends Model
     use HasFactory;
     protected $table = "datapetani";
     public $timestamps = false;
-    protected $primaryKey = 'id_petani';
+    protected $primaryKey = 'id';
 
     protected $fillable = [
-        'id_petani',
+        'id',
         'nama',
         'alamat',
         'no_tlpn',
@@ -25,6 +25,6 @@ class DataPetani extends Model
     }
     public function pesanan()
     {
-        return $this->hasMany(Pesanan::class);
+        return $this->hasMany('App\Models\Pesanan','id_petani', 'id');
     }
 }

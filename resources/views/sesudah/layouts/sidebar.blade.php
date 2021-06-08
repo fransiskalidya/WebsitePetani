@@ -39,6 +39,14 @@
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="{{'/produk'}}">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Daftar Produk Pupuk</span>
+        </a>
+      </li>
+      
+      <!-- Nav Item - Pages Collapse Menu -->
       {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{'/postContent'}}">
           <i class="fas fa-fw fa-folder"></i>

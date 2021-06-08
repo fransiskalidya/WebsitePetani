@@ -69,12 +69,12 @@
                 </ul>
             </div>
             @endif
-            <form method="post" action="{{ route('dataPetani.update', $data->id_petani) }}" id="myForm">
+            <form method="post" action="{{ route('dataPetani.update', $data->id) }}" id="myForm">
                 @csrf
                 @method('PUT')
                 <div class="form-group">
-                    <label for="id_petani">Id Petani : </label>
-                    <input type="text" name="id_petani" class="form-control" id="id_petani" value="{{$data->id_petani}}" aria-describedby="id_petani" >
+                    <label for="id">Id Petani : </label>
+                    <input type="text" name="id" class="form-control" id="id" value="{{$data->id}}" aria-describedby="id" >
                 </div>
 
                 <div class="form-group">
