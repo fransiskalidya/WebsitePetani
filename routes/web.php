@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use  App\Http\Controllers\ContentController;
+use App\Http\Controllers\ContentController;
 use App\Http\Controllers\DataPetaniController;
 use App\Http\Controllers\ArticleController;
 use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\PesanController;
 use App\Http\Controllers\PengumumanController;
+use App\Http\Controllers\HistoryController;
 
 use  Illuminate\Http\Request;
 
@@ -90,3 +91,6 @@ Route::get('/artikel3', [ArticleController::class, 'artikel3']);
 Route::get('/populer1', [ArticleController::class, 'populer1']);
 Route::get('/populer2', [ArticleController::class, 'populer2']);
 Route::get('/populer3', [ArticleController::class, 'populer3']);
+
+Route::get('history', [HistoryController::class, 'index']);
+Route::get('history/{id}', [HistoryController::class, 'detail']);
