@@ -19,7 +19,7 @@
                     <h3><i class="fa fa-shopping-cart"></i> Check Out</h3>
                     @if(!empty($pesanan))
                     <p align="right">Tanggal Pesan : {{ $pesanan->tanggal }}</p>
-
+                    <p align="left">Nama Admin : {{ $pesanan->user->username }}</p>
                     <table class="table table-striped">
                         <thead>
                             <tr>
