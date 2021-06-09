@@ -44,7 +44,7 @@
                                 <tr>
 								@foreach($barangs as $barang)
                                     <td class="shoping__cart__item">
-									<img class="img-responsive" src="{{url('cart')}}/{{$barang->image}}" style="width: 520px; height: 430px" alt="product-img" />
+									<img class="img-responsive" src="{{url('cart')}}/{{$barang->image}}" style="width: 400px; height: 380px" alt="product-img" />
                                         <h5>Urea</h5>
                                     </td>
                                     <td class="shoping__cart__price">

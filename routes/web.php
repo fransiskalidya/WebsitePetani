@@ -81,7 +81,7 @@ Route::post('/pesan/{id}', [PesanController::class, 'pesan']);
 Route::get('check-out', [PesanController::class, 'check_out']);
 Route::delete('check-out/{id}', [PesanController::class, 'delete']);
 
-Route::get('konfirmasi-check-out', [PesanController::class, 'konfirmasi']);
+Route::get('invoice', [PesanController::class, 'konfirmasi']);
 
 Route::get('/artikel1', [ArticleController::class, 'artikel1']);
 Route::get('/artikel2', [ArticleController::class, 'artikel2']);
@@ -90,4 +90,3 @@ Route::get('/artikel3', [ArticleController::class, 'artikel3']);
 Route::get('/populer1', [ArticleController::class, 'populer1']);
 Route::get('/populer2', [ArticleController::class, 'populer2']);
 Route::get('/populer3', [ArticleController::class, 'populer3']);
-

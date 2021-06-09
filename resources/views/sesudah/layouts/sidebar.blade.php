@@ -25,7 +25,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
+        <a class="nav-link collapsed" href="{{ url('invoice') }}">
           <i class="fas fa-fw fa-cog"></i>
           <span>Invoice Transaksi</span></a>
       </li>
@@ -45,7 +45,7 @@
           <span>Daftar Produk Pupuk</span>
         </a>
       </li>
-      
+
       <!-- Nav Item - Pages Collapse Menu -->
       {{-- <li class="nav-item">
         <a class="nav-link collapsed" href="{{'/postContent'}}">
@@ -55,11 +55,11 @@
       </li> --}}
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      {{-- <li class="nav-item">
         <a class="nav-link" href="{{'/keranjang'}}">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Kasir</span></a>
-      </li>
+      </li> --}}
       <li class="nav-item">
         <a class="nav-link" href="{{ route('register') }}">
           <i class="fas fa-fw fa-chart-area"></i>

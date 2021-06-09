@@ -9,34 +9,38 @@
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Check Out</li>
+                    <li class="breadcrumb-item active" aria-current="page">Invoice</li>
                 </ol>
             </nav>
         </div>
         <div class="col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <h3><i class="fa fa-shopping-cart"></i> Check Out</h3>
+                    <h3><i class="fa fa-shopping-cart"></i> Invoice</h3>
                     @if(!empty($pesanan))
-                    <p align="right">Tanggal Pesan : {{ $pesanan->tanggal }}</p>
-                    <p align="left">Nama Admin : {{ $pesanan->user->username }}</p>
+                    {{-- <p align="right">Tanggal Pesan : {{ $pesanan->tanggal }}</p> --}}
+
                     <table class="table table-striped">
                         <thead>
                             <tr>
                                 <th>No</th>
+                                <th>tanggal</th>
+                                <th>nama admin</th>
                                 <th>Gambar</th>
                                 <th>Nama Barang</th>
                                 <th>Jumlah</th>
                                 <th>Harga</th>
                                 <th>Total Harga</th>
-                                <th>Aksi</th>
+                                {{-- <th>Aksi</th> --}}
                             </tr>
                         </thead>
                         <tbody>
                             <?php $no = 1; ?>
-                            @foreach($pesanan_details as $pesanan_detail)
+                            @foreach($pesananDetail as $pesanan_detail)
                             <tr>
                                 <td>{{ $no++ }}</td>
+                                <td>{{$pesanan_detail->pesanan->tanggal}}</td>
+                                <td>{{$pesanan_detail->pesanan->user->username}}</td>
                                 <td>
                                     <img src="{{ url('cart') }}/{{ $pesanan_detail->barang->image }}" width="100" alt="...">
                                 </td>
@@ -44,25 +48,26 @@
                                 <td>{{ $pesanan_detail->jumlah }} karung</td>
                                 <td align="right">Rp. {{ number_format($pesanan_detail->barang->harga) }}</td>
                                 <td align="right">Rp. {{ number_format($pesanan_detail->subtotal) }}</td>
-                                <td>
+                                {{-- <td>
                                     <form action="{{ url('check-out') }}/{{ $pesanan_detail->id }}" method="post">
                                     @csrf
                                         {{ method_field('DELETE') }}
                                         <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Anda yakin akan menghapus data ?');">
                                         <i class="tf-ion-android-delete">Hapus</i></button>
                                     </form>
-                                </td>
+                                </td> --}}
+                                @endforeach
+                                {{-- <td>{{$pesanan->user->name}}</td> --}}
                             </tr>
-                            @endforeach
-                            <tr>
-                                <td colspan="5" align="right"><strong>Total Harga :</strong></td>
-                                <td align="right"><strong>Rp. {{ number_format($pesanan->total) }}</strong></td>
+                            {{-- <tr>
+                                <td colspan="8" align="right"><strong>Total Harga :</strong></td>
+                                <td align="right"><strong>Rp. {{ number_format($pesanan_detail->subtotal++) }}</strong></td>
                                 <td>
-                                    <a href="{{ url('invoice') }}" class="btn btn-success" onclick="return confirm('Anda yakin akan Check Out ?');">
+                                    <a href="{{ url('konfirmasi-check-out') }}" class="btn btn-success" onclick="return confirm('Anda yakin akan Check Out ?');">
                                         <i class="tf-ion-android-cart"></i> Check Out
                                     </a>
                                 </td>
-                            </tr>
+                            </tr> --}}
                         </tbody>
                     </table>
                     @endif
