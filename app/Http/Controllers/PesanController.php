@@ -125,20 +125,25 @@ class PesanController extends Controller
         //return redirect('profile');
         // }
 
-        $pesanan = Pesanan::where('id_user', Auth::user()->id)->where('status',0)->first();
+        $pesanan = Pesanan::where('id_user', Auth::user()->id)->where('status', 0)->first();
         $pesanan_id = $pesanan->id;
         $pesanan->status = 1;
         $pesanan->update();
 
         $pesanan_details = PesananDetail::where('id_pesanan', $pesanan_id)->get();
         foreach ($pesanan_details as $pesanan_detail) {
-            $barang= Barang::where('id', $pesanan_detail->id_barang)->first();
-            $barang->stok = $barang->stok-$pesanan_detail->jumlah;
+            $barang = Barang::where('id', $pesanan_detail->id_barang)->first();
+            $barang->stok = $barang->stok - $pesanan_detail->jumlah;
             $barang->update();
         }
 
         //Alert::success('Pesanan Sukses Check Out Silahkan Lanjutkan Proses Pembayaran', 'Success');
-        return redirect('history/'.$pesanan_id);
-
+        return redirect('history/' . $pesanan_id);
+    }
+    public function invoice()
+    {
+        $pesanan = Pesanan::all();
+        $pesananDetail = PesananDetail::all();
+        return view('pesan.konfirmasi', compact('pesanan', 'pesananDetail'));
     }
 }

@@ -82,7 +82,7 @@ Route::post('/pesan/{id}', [PesanController::class, 'pesan']);
 Route::get('check-out', [PesanController::class, 'check_out']);
 Route::delete('check-out/{id}', [PesanController::class, 'delete']);
 
-Route::get('invoice', [PesanController::class, 'konfirmasi']);
+Route::get('invoice', [PesanController::class, 'invoice']);
 
 Route::get('/artikel1', [ArticleController::class, 'artikel1']);
 Route::get('/artikel2', [ArticleController::class, 'artikel2']);
