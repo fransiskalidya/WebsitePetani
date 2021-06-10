@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ url('home') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+            <a href="{{ url('produk') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
         </div>
         <div class="col-md-12 mt-2">
             <nav aria-label="breadcrumb">
@@ -19,7 +19,7 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="{{ url('cart') }}/{{ $barang->image }}" class="rounded mx-auto d-block" width="100%" alt=""> 
+                            <img src="{{ url('cart') }}/{{ $barang->image }}" class="rounded mx-auto d-block" width="100%" alt="">
                         </div>
                         <div class="col-md-6 mt-5">
                             <h2>{{ $barang->nama_barang }}</h2>
@@ -35,8 +35,8 @@
                                         <td>:</td>
                                         <td>{{ number_format($barang->stok) }}</td>
                                     </tr>
-                                   
-                                    <tr>  
+
+                                    <tr>
                                     <td>Jumlah Pesan</td>
                                         <td>:</td>
                                         <td>
@@ -46,12 +46,12 @@
                                                 <button type="submit" class="btn btn-primary mt-2"><i class="fa fa-shopping-cart"></i> Masukkan Keranjang</button>
                                             </form>
                                         </td>
-                                    </tr>                                
-                                        
-                                    
-                                   
-                                    
-                                    
+                                    </tr>
+
+
+
+
+
                                 </tbody>
                             </table>
                         </div>
