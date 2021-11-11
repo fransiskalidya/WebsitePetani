@@ -70,7 +70,11 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Data Penerima Subsidi</span></a>
       </li>
-
+      <li class="nav-item">
+        <a class="nav-link" href="{{'/create' }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>Input Artikel</span></a>
+      </li>
       {{-- <li class="nav-item">
          @if (Route::has('register'))
       <li class="nav-item">
