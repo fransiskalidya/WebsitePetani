@@ -14,6 +14,11 @@ class ContentController extends Controller
         $dataIndex = Content::all();
         return view('sebelum.index', compact('dataIndex', 'pgm'));
     }
+    public function tampil()
+    {
+        $contents = Content::all();
+        return view('contents.index', compact('contents'));
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -45,7 +50,7 @@ class ContentController extends Controller
             'Pencegahan' => $request->Pencegahan,
             'Tips' => $request->Tips,
         ]);
-        return redirect()->route('content.index')
+        return redirect()->route('content.tampil')
             ->with('success', 'Artikel berhasil disimpan');
     }
 
@@ -70,7 +75,8 @@ class ContentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $content = Content::find($id);
+        return view('contents.edit', ['content' => $content]);
     }
 
     /**
@@ -83,7 +89,18 @@ class ContentController extends Controller
     public function update(Request $request, $id)
     {
 
-        //
+        $contents = Content::find($id);
+        $contents->id = $request->id;
+        $contents->Image = $request->Image;
+        $contents->Pengertian = $request->Pengertian;
+        $contents->Penyebab = $request->Penyebab;
+        $contents->Pencegahan = $request->Pencegahan;
+        $contents->Tips = $request->Tips;
+
+        $contents->save();
+
+        return redirect()->route('content.tampil')
+            ->with('success', 'Data Berhasil Diupdate');
     }
 
     /**
@@ -94,6 +111,8 @@ class ContentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Content::find($id)->delete();
+        return redirect()->route('content.tampil')
+            ->with('success', 'Data Berhasil Dihapus');
     }
 };
