@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
-            <a href="{{ url('produk') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+            <a href="{{ url('home') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
         </div>
         <div class="col-md-12 mt-2">
             <nav aria-label="breadcrumb">
@@ -37,9 +37,9 @@
                                 <th>Jumlah</th>
                                 <th>Harga</th>
                                 <th>Total Harga</th>
-                            
+
                             </tr>
-                        </thead>  
+                        </thead>
                         <tbody>
                             <?php $no = 1; ?>
                             @foreach($pesanan_details as $pesanan_detail)
@@ -52,18 +52,18 @@
                                 <td>{{ $pesanan_detail->jumlah }} karung</td>
                                 <td>Rp. {{ number_format($pesanan_detail->barang->harga) }}</td>
                                 <td>Rp. {{ number_format($pesanan_detail->subtotal) }}</td>
-                                
+
                             </tr>
                             @endforeach
                             <tr>
                                 <td colspan="5" align="right"><strong>Total Harga :</strong></td>
                                 <td align="right"><strong>Rp. {{ number_format($pesanan->total) }}</strong></td>
-                     
+
                             </tr>
-                            
+
                                 <td colspan="5" align="right"><strong>Total yang harus dibayar :</strong></td>
                                 <td align="right"><strong>Rp. {{ number_format($pesanan->total) }}</strong></td>
-                     
+
                             </tr>
                         </tbody>
                     </table>
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
 </div>
 @endsection

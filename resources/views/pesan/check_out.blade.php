@@ -4,6 +4,8 @@
     <div class="row">
         <div class="col-md-12">
             <a href="{{ url('home') }}" class="btn btn-primary"><i class="fa fa-arrow-left"></i> Kembali</a>
+            <a href="{{ url('produk') }}" class="btn btn-success"><i class="fa fa-arrow-left"></i> Tambah</a>
+
         </div>
         <div class="col-md-12 mt-2">
             <nav aria-label="breadcrumb">
@@ -39,6 +41,7 @@
                                 <td>{{ $no++ }}</td>
                                 <td>
                                     <img src="{{ url('cart') }}/{{ $pesanan_detail->barang->image }}" width="100" alt="...">
+
                                 </td>
                                 <td>{{ $pesanan_detail->barang->nama_barang }}</td>
                                 <td>{{ $pesanan_detail->jumlah }} karung</td>
@@ -61,7 +64,9 @@
                                     <a href="{{ url('detail') }}" class="btn btn-success" onclick="return confirm('Anda yakin akan Check Out ?');">
                                         <i class="tf-ion-android-cart"></i> Check Out
                                     </a>
+
                                 </td>
+
                             </tr>
                         </tbody>
                     </table>
