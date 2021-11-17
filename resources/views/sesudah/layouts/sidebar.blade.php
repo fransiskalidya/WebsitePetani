@@ -76,7 +76,7 @@
           <span>Input Artikel</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('content.tampil') }}">
+        <a class="nav-link" href="{{route('contents.tampil') }}">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>CRUD Artikel</span></a>
       </li>

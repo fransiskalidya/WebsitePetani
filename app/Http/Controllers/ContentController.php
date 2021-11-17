@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Content;
 use App\Models\Pengumuman;
+use Illuminate\Support\Facades\Storage;
 
 class ContentController extends Controller
 {
@@ -14,9 +15,15 @@ class ContentController extends Controller
         $dataIndex = Content::all();
         return view('sebelum.index', compact('dataIndex', 'pgm'));
     }
-    public function tampil()
+    public function tampil(Request $request)
     {
-        $contents = Content::all();
+        // $contents = Content::all();
+        if ($request->has('search')) { // Jika ingin melakukan pencarian judul
+            $contents = Content::where('Judul', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $contents = Content::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        }
         return view('contents.index', compact('contents'));
     }
     /**
@@ -38,8 +45,18 @@ class ContentController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'Judul' => 'required',
+            'Image' => 'file|image|mimes:jpeg,png,jpg',
+            'Pengertian' => 'required',
+            'Penyebab' => 'required',
+            'Pencegahan' => 'required',
+            'Tips' => 'required',
+
+        ]);
+
         if ($request->file('Image')) {
-            $image_name = $request->file('Image')->store('featured_image', 'public');
+            $image_name = $request->file('Image')->store('images', 'public');
         }
 
         Content::create([
@@ -50,7 +67,8 @@ class ContentController extends Controller
             'Pencegahan' => $request->Pencegahan,
             'Tips' => $request->Tips,
         ]);
-        return redirect()->route('content.tampil')
+
+        return redirect()->route('contents.tampil')
             ->with('success', 'Artikel berhasil disimpan');
     }
 
@@ -88,18 +106,22 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        if ($request->get('Image') && file_exists(storage_path('app/public/' . $request->Image)))
+        {
+            Storage::delete(['public/' .$request->Image]);
+        }
+        $image_name = $request->file('Image')->store('images', 'public');
         $contents = Content::find($id);
-        $contents->id = $request->id;
-        $contents->Image = $request->Image;
-        $contents->Pengertian = $request->Pengertian;
-        $contents->Penyebab = $request->Penyebab;
-        $contents->Pencegahan = $request->Pencegahan;
-        $contents->Tips = $request->Tips;
+        $contents->Image = $image_name;
+        $contents->Judul = $request->get('Judul');
+        $contents->Pengertian = $request->get('Pengertian');
+        $contents->Penyebab = $request->get('Penyebab');
+        $contents->Pencegahan = $request->get('Pencegahan');
+        $contents->Tips = $request->get('Tips');
 
         $contents->save();
 
-        return redirect()->route('content.tampil')
+        return redirect()->route('contents.tampil')
             ->with('success', 'Data Berhasil Diupdate');
     }
 
@@ -112,7 +134,7 @@ class ContentController extends Controller
     public function destroy($id)
     {
         Content::find($id)->delete();
-        return redirect()->route('content.tampil')
+        return redirect()->route('contents.tampil')
             ->with('success', 'Data Berhasil Dihapus');
     }
 };

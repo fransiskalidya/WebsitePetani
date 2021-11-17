@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                 @endif
-                <form method="post" action="{{ route('content.store') }}" id="myForm" encrypte="multipart/form-data">
+                <form method="post" action="{{ route('content.store') }}" id="myForm" enctype="multipart/form-data">
                 @csrf
                     <div class="featured__controls">
                         <div class="form-group">
@@ -51,7 +51,7 @@
 
                         <div class="form-group">
                             <label for="Image">Foto</label>
-                            <input type="file" name="Image" class="form-control" id="Image" required="required" aria-describedby="Image" ></br>
+                            <input type="file" name="Image" class="form-control" id="Image" required="required" aria-describedby="Image" >
                         </div>
 
                         <div class="form-group">

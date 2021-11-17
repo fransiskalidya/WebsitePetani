@@ -1,7 +1,7 @@
-@extends('contents.layouts.app')
+@extends('sebelum.layouts.app')
 
     <!-- Header Section Begin -->
-@include('contents.layouts.header')
+@include('sebelum.layouts.header')
     <!-- Header Section End -->
 
     <!-- Breadcrumb Section Begin -->
@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     @endif
-                <form method="post" action="{{ route('content.update', $content->id) }}" id="myForm" encypte="multipart/form-data">
+                <form method="post" action="{{ route('content.update', $content->id) }}" id="myForm" enctype="multipart/form-data">
                 @csrf
                 @method('PUT') 
                     <div class="featured__controls">

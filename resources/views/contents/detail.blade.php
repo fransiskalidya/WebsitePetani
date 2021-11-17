@@ -18,7 +18,7 @@
                     <li class="list-group-item"><b>Tips: </b>{{$Content->Tips}}</li>
                      </ul>
         </div>
-            <a class="btn btn-success mt-3" href="{{'/crudContent'}}">Kembali</a>
+            <a class="btn btn-success mt-3" href="{{'/content/tampil'}}">Kembali</a>
         </div>
     </div>
 </div>
