@@ -10,10 +10,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Post Content</h2>
+                        <h2>Edit Content</h2>
                         <div class="breadcrumb__option">
                             <a href="./index.html">Home</a>
-                            <span>Post Content</span>
+                            <span>Edit Content</span>
                         </div>
                     </div>
                 </div>
@@ -28,7 +28,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Post Content</h2>
+                        <h2>Edit Content</h2>
                     </div>
                     <div class="card-body">
                 @if ($errors->any())
@@ -43,7 +43,7 @@
                     @endif
                 <form method="post" action="{{ route('content.update', $content->id) }}" id="myForm" enctype="multipart/form-data">
                 @csrf
-                @method('PUT') 
+                @method('PUT')
                     <div class="featured__controls">
                     <div class="form-group">
                             <label for="Judul">Judul</label>

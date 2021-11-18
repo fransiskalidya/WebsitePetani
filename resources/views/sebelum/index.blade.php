@@ -165,7 +165,7 @@
 
                 @foreach($dataIndex as $itemIndex)
                     <div class="blog__details__text">
-                        <img src="img/blog/blog-4.jpg" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
+                        <img src="{{asset('storage/'.$itemIndex->Image)}}" alt="Popular" class="tm-popular-item-img" height="300px" width="1000px">
                         <div class="tm-popular-item-description">
                     <h3 class="tm-handwriting-font tm-popular-item-title"><span class="tm-handwriting-font bigger-first-letter">
                     </span>{{$itemIndex -> Judul}}</h3><hr class="tm-popular-item-hr">

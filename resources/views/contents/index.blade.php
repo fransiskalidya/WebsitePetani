@@ -14,6 +14,7 @@
 
             <!-- Form Search -->
             <div class="float-left my-2">
+                <form action="{{'/content/tampil'}}">
                     <div class="input-group custom-search-form">
                         <input type="text" class="form-control" name="search" placeholder="Search...">
                         <span class="input-group-btn">
@@ -29,13 +30,13 @@
             </div>
         </div>
     </div>
-    
+
     @if ($message = Session::get('success'))
         <div class="alert alert-success">
             <p>{{ $message }}</p>
         </div>
     @endif
-    
+
     <table class="table table-bordered">
         <tr>
             <th>Judul</th>
@@ -48,7 +49,7 @@
         </tr>
         @foreach ($contents as $Content)
         <tr>
-    
+
             <td>{{ $Content->Judul }}</td>
             <td>
             <img width="100px" height="100px" src="{{asset('storage/'.$Content->Image)}}">
@@ -58,10 +59,10 @@
             <td>{{ $Content->Pencegahan }}</td>
             <td>{{ $Content->Tips }}</td>
             <td>
-            <form action="{{ route('content.destroy',$Content->id) }}" method="POST">   
+            <form action="{{ route('content.destroy',$Content->id) }}" method="POST">
                 <a class="btn btn-info" href="{{ route('content.show',$Content->id) }}">Show</a>
                 <a class="btn btn-primary" href="{{ route('content.edit',$Content->id) }}">Edit</a>
-                @csrf 
+                @csrf
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
@@ -70,4 +71,3 @@
         @endforeach
         </table>
     @endsection
-        

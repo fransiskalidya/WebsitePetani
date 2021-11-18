@@ -12,7 +12,7 @@ class ContentController extends Controller
     public function index()
     {
         $pgm = Pengumuman::all();
-        $dataIndex = Content::all();
+        $dataIndex = Content::orderBy('id', 'desc')->paginate(1);
         return view('sebelum.index', compact('dataIndex', 'pgm'));
     }
     public function tampil(Request $request)
@@ -106,9 +106,8 @@ class ContentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        if ($request->get('Image') && file_exists(storage_path('app/public/' . $request->Image)))
-        {
-            Storage::delete(['public/' .$request->Image]);
+        if ($request->get('Image') && file_exists(storage_path('app/public/' . $request->Image))) {
+            Storage::delete(['public/' . $request->Image]);
         }
         $image_name = $request->file('Image')->store('images', 'public');
         $contents = Content::find($id);
