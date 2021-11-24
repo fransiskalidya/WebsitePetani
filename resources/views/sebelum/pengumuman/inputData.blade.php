@@ -8,7 +8,7 @@
                     <div class="header__logo">
                         <h2 class="gold-text tm-welcome-header-2">
                             <span style="color: 7FAD39">PENGUMUMAN</span>
-                            
+
                         </h2>
                     </div>
                 </div>
@@ -72,10 +72,10 @@
                     <form method="post" action="{{ route('pengumuman.store') }}" id="myForm">
                         @csrf
                         <div class="featured__controls">
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label for="id">Id : </label>
-                                <input type="text" name="id" class="form-control" id="id" aria-describedby="id" >
-                            </div>
+                                <input  type="text" name="id" class="form-control" id="disabledTextInput" aria-describedby="id" >
+                            </div> --}}
 
                             <div class="form-group">
                                 <label for="Judul">Judul</label>

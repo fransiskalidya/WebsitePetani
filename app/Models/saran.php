@@ -5,15 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Pengumuman extends Model
+class saran extends Model
 {
     use HasFactory;
-    protected $table = "pengumuman";
-    public $timestamps = false;
-    protected $primaryKey = 'id';
-
+    protected $table = 'saran';
     protected $fillable = [
-        'Judul',
-        'Isi',
+        'nama',
+        'email',
+        'pesan'
     ];
 }

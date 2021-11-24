@@ -9,6 +9,7 @@ use App\Http\Controllers\KeranjangController;
 use App\Http\Controllers\PesanController;
 use App\Http\Controllers\PengumumanController;
 use App\Http\Controllers\HistoryController;
+use App\Http\Controllers\SaranController;
 
 use  Illuminate\Http\Request;
 
@@ -78,6 +79,9 @@ Route::get('datapetani/invoice/{datapetani}', [DataPetaniController::class, 'inv
 Route::resource('article', ArticleController::class);
 
 Route::resource('pengumuman',  PengumumanController::class);
+
+Route::resource('saran',  SaranController::class);
+
 
 Route::get('/pesan/{id}', [PesanController::class, 'index']);
 Route::post('/pesan/{id}', [PesanController::class, 'pesan']);

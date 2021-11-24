@@ -71,9 +71,9 @@
           <span>Data Penerima Subsidi</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{'/create' }}">
+        <a class="nav-link" href="{{'/pengumuman' }}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>Input Artikel</span></a>
+          <span>CRUD Pengumuman</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('contents.tampil') }}">
