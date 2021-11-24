@@ -14,7 +14,8 @@ class SaranController extends Controller
      */
     public function index()
     {
-        //
+        $saran = saran::all();
+        return view('sebelum.index', compact('saran'));
     }
 
     /**
@@ -24,7 +25,7 @@ class SaranController extends Controller
      */
     public function create()
     {
-        //
+        return view('sebelum.saran.inputData');
     }
 
     /**
@@ -41,6 +42,7 @@ class SaranController extends Controller
             'pesan' => $request->pesan,
         ]);
         // return redirect()->('/contact');
+        return redirect()->route('saran.index');
     }
 
     /**
@@ -51,7 +53,8 @@ class SaranController extends Controller
      */
     public function show($id)
     {
-        //
+        $saran = saran::find($id);
+        return view('sebelum.saran.tampil', compact('saran'));
     }
 
     /**
@@ -85,6 +88,8 @@ class SaranController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Pengumuman::find($id)->delete();
+        return redirect()->route('saran.index')
+            ->with('success', 'Data Berhasil Dihapus');
     }
 }
