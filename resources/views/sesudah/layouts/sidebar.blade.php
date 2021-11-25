@@ -80,6 +80,11 @@
           <i class="fas fa-fw fa-chart-area"></i>
           <span>CRUD Artikel</span></a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{{'/saran' }}">
+          <i class="fas fa-fw fa-chart-area"></i>
+          <span>CRUD Saran</span></a>
+      </li>
       {{-- <li class="nav-item">
          @if (Route::has('register'))
       <li class="nav-item">

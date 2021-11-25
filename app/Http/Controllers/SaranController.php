@@ -15,7 +15,7 @@ class SaranController extends Controller
     public function index()
     {
         $saran = saran::all();
-        return view('sebelum.index', compact('saran'));
+        return view('sebelum.saran.index', compact('saran'));
     }
 
     /**
@@ -54,7 +54,7 @@ class SaranController extends Controller
     public function show($id)
     {
         $saran = saran::find($id);
-        return view('sebelum.saran.tampil', compact('saran'));
+        return view('sebelum.saran.show', compact('saran'));
     }
 
     /**
@@ -88,8 +88,18 @@ class SaranController extends Controller
      */
     public function destroy($id)
     {
-        Pengumuman::find($id)->delete();
+        Saran::find($id)->delete();
         return redirect()->route('saran.index')
             ->with('success', 'Data Berhasil Dihapus');
+    }
+    public function tampil(Request $request)
+    {
+        if ($request->has('search')) { // Jika ingin melakukan pencarian nama
+            $saran = Saran::where('Nama', 'like', "%" . $request->search . "%")->paginate(5);
+        } else { // Jika tidak melakukan pencarian judul
+            //fungsi eloquent menampilkan data menggunakan pagination
+            $saran = Saran::orderBy('id', 'desc')->paginate(5); // Pagination menampilkan 5 data
+        }
+        return view('sebelum.saran.tampil', compact('saran'));
     }
 }

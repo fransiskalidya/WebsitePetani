@@ -68,13 +68,8 @@
 
         <table class="table table-bordered">
 
-
-
-
-
             @foreach ($pgm as $data)
             <tr>
-
 
                 <td><b>{{ $data->Judul }}</b><br><br>
                 {{ $data->Isi }}
