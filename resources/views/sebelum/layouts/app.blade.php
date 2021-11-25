@@ -29,6 +29,7 @@
         <div class="loader"></div>
     </div>
     {{-- @section('content') --}}
+    <br>
 @include('sebelum.layouts.footer')
 
 
