@@ -232,7 +232,7 @@
           <div class="row">
 
             <!-- Total Item Sold Example -->
-            <div class="col-xl-8 col-lg-7">
+            <div class="col-xl-15 col-lg-10">
             <div class="card shadow mb-4">
               <div class="card border-left-info shadow h-100 py-2">
                 <div class="card-body">
@@ -253,15 +253,17 @@
                 </div>
               </div>
               </div>
-            </div>
-
-            <!-- Total Visitor Example -->
+              </div>
+           
+            
             <div class="col-xl-3 col-md-6 mb-4">
             <div class="card shadow mb-4">
               <div class="card border-left-warning shadow h-100 py-2">
                 <div class="card-body">
                   <div class="row no-gutters align-items-center">
                     <div class="col mr-2">
+                    <i class="fas fa-user-lock fa-3x"></i>
+                      <br>
                       <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Admin</div>
 
                       <div class="h5 mb-0 font-weight-bold text-gray-800">{{$jumlah}}</div>
@@ -272,11 +274,47 @@
               </div>
             </div>
           </div>
+         
 
-          <!-- Content Row -->
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+              <div class="card border-left-success shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                    <i class="fas fa-users fa-3x"></i>
+                      <br>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Petani</div>
 
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{$jumlah1}}</div>
 
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-xl-3 col-md-6 mb-4">
+            <div class="card shadow mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                    <i class="fas fa-boxes fa-3x"></i>
+                      <br>
+                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Total Jenis Pupuk</div>
+
+                      <div class="h5 mb-0 font-weight-bold text-gray-800">{{$jumlah2}}</div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
             <!-- Area Chart -->
             <div class="col-xl-8 col-lg-7">
               <div class="card shadow mb-4">
