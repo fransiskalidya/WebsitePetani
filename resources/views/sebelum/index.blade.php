@@ -111,7 +111,7 @@
                                         <h6>Peluang, Tantangan, dan Strategi<br /> Dalam Pengembangan Sistem Pertanian Organik</h6>
                                         <ul>
                                             <li>
-                                                <span>Juni 01, 2021</span> </br>
+                                                <span>December 05, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>
@@ -125,7 +125,7 @@
                                         <h6>Tikus Sawah (Rattus-Rattus Argentiventer) dan<br /> Pengaruhnya Terhadap Pola Kerusakan Padi</h6>
                                         <ul>
                                             <li>
-                                                <span>Juni 01, 2021</span> </br>
+                                                <span>December 06, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>
@@ -139,7 +139,7 @@
                                         <h6>Petunjuk Lapangan Pengendalian<br />Hama Wereng Coklat</h6>
                                         <ul>
                                             <li>
-                                                <span>Juni 01, 2021</span> </br>
+                                                <span>December 08, 2021</span> </br>
                                                 <i class="fa fa-eye" aria-hidden="false" href="#">
                                             </i>
                                         </ul>

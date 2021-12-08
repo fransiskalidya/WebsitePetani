@@ -1,77 +1,61 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('sebelum.layouts.app')
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <h2 class="gold-text tm-welcome-header-2">
+                            <span style="color: 7FAD39">PENGUMUMAN</span>
 
-    <title>PETANIKU</title>
-  </head>
-  <body>
-      {{-- navigasi --}}
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #afd476">
-            <div class="container-fluid  offset-md-1">
-            <h2 class="gold-text tm-welcome-header-2" href="{{'/'}}">
-                <span style="color: #7FAD39">PETANI</span>
-                <span style="color: black">KU</span>
-            </h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse offset-md-1" id="navbarNav">
-                <ul class="navbar-nav" style="font-weight: bolder">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="{{'/'}}">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{'/contact'}}">Contact</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" style="color: #7FAD39" class="active" href="{{route('dataPetani.tampil')}}">Data Penerima Subsidi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">Login</a>
-                </li>
-                </ul>
-            </div>
-            </div>
-        </nav>
-{{-- end of navigasi --}}
-
-{{-- @extends('sebelum.layouts.app') --}}
-@extends('sebelum.dataPetani.layout')
-{{-- @section('content') --}}
-    <div class="row">
-        <div class="col-xl-10 col-md-2 offset-md-1">
-            <div class="pull-left mt-1">
-            </div>
-
-            <!-- Form Search -->
-
-            <div class="float-left my-3 mx-4">
-                <form action="{{route('dataPetani.tampil')}}" class="row g-3" method="GET">
-                    <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" name="search" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
-                        </span>
+                        </h2>
                     </div>
-                </form>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
+                            <li ><a href="{{'/'}}">Home</a></li>
+                            <li ><a href="{{'/contact'}}">Contact</a></li>
+                            <li ><a href="{{'dataPetani/tampil'}}">Data Penerima Subsidi</a></li>
+                            <li><a href="{{ route('login') }}">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <!-- End Form Search -->
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
-    </div>
-    <div class="col-xl-10 col-md-2 offset-md-1">
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
+    </header>
+    <!-- Header Section End -->
 
+    {{-- content --}}
+    {{-- @extends('sebelum.layouts') --}}
+
+    {{-- @section('content') --}}
+        <div class="row g-2">
+            <div class="col-lg-12 margin-tb">
+                <div class="pull-left mt-2">
+                </div>
+
+                <!-- Form Search -->
+
+                <div class="float-left my-3 mx-5">
+                    <form action="{{route('pengumuman.index')}}" class="row g-3" method="GET">
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" name="search" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <!-- End Form Search -->
+
+                
+        <div class="col-xl-12 col-md-2">
     <table class="table table-bordered">
         <tr>
             <th>Id Petani</th>

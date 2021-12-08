@@ -35,12 +35,12 @@
 
                             <div class="form-group">
                                 <label for="Judul">Judul</label>
-                                <input type="Judul" name="Judul" class="form-control" id="Judul" value="{{$data->Judul}}" aria-describedby="Judul" >
+                                <input type="Judul" name="Judul" class="form-control" id="Judul" value="{{$data->Judul}}" aria-describedby="Judul" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="Isi">Isi</label>
-                                <input type="Isi" name="Isi" class="form-control" id="alamat" value="{{$data->Isi}}" aria-describedby="alamat" >
+                                <input type="Isi" name="Isi" class="form-control" id="alamat" value="{{$data->Isi}}" aria-describedby="alamat" required>
                             </div>
 
                             <br><br>

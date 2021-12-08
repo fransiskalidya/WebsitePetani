@@ -79,12 +79,12 @@
 
                             <div class="form-group">
                                 <label for="Judul">Judul</label>
-                                <input type="Judul" name="Judul" class="form-control" id="Judul" aria-describedby="Judul" >
+                                <input type="Judul" name="Judul" class="form-control" id="Judul" aria-describedby="Judul" required>
                             </div>
 
                             <div class="form-group">
                                 <label for="Isi">Isi</label>
-                                <input type="Isi" name="Isi" class="form-control" id="Isi" aria-describedby="Isi" >
+                                <input type="Isi" name="Isi" class="form-control" id="Isi" aria-describedby="Isi" required>
                             </div>
 
                             <br><br>

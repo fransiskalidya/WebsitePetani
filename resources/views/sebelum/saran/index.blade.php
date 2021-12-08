@@ -7,7 +7,7 @@
                 <div class="col-lg-3">
                     <div class="header__logo">
                         <h2 class="gold-text tm-welcome-header-2">
-                            <span style="color: 7FAD39">SARAN</span>
+                            <span style="color: 7FAD39">PENGUMUMAN</span>
 
                         </h2>
                     </div>
@@ -18,7 +18,7 @@
                             {{-- <li class="active"><a href="{{'/'}}">Home</a></li> --}}
                             <li ><a href="{{'/'}}">Home</a></li>
                             <li ><a href="{{'/contact'}}">Contact</a></li>
-                            <li ><a href="#">Data Penerima Subsidi</a></li>
+                            <li ><a href="{{'dataPetani/tampil'}}">Data Penerima Subsidi</a></li>
                             <li><a href="{{ route('login') }}">Login</a></li>
                         </ul>
                     </nav>
@@ -31,21 +31,19 @@
     </header>
     <!-- Header Section End -->
 
-
     {{-- content --}}
     {{-- @extends('sebelum.layouts') --}}
 
     {{-- @section('content') --}}
-    <div class="col-xl-10 col-md-4 offset-md-1">
         <div class="row g-2">
-            <div class="col-lg-6 margin-tb">
+            <div class="col-lg-12 margin-tb">
                 <div class="pull-left mt-2">
                 </div>
 
                 <!-- Form Search -->
 
                 <div class="float-left my-3 mx-5">
-                    <form action="{{route('saran.index')}}" class="row g-3" method="GET">
+                    <form action="{{route('pengumuman.index')}}" class="row g-3" method="GET">
                         <div class="input-group custom-search-form">
                             <input type="text" class="form-control" name="search" placeholder="Search...">
                             <span class="input-group-btn">
@@ -56,30 +54,33 @@
                 </div>
                 <!-- End Form Search -->
 
+                
+        <div class="col-xl-12 col-md-2">
+          
 
-        <table class="table table-bordered">
+                <table class="table table-bordered">
+                    <tr>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th width="800px">Pesan</th>
+                        <th width="250px">Action</th>
+                    </tr>
+                    @foreach ($saran as $data)
+                    <tr>
 
-            @foreach ($saran as $data)
-            <tr>
-                <td width="300px"><b>Nama:</b><br>
-                {{ $data->nama }}<br>
-                <b>Email:</b><br>
-                {{ $data->email }}<br>
-                <b>Pesan:</b><br>
-                {{ $data->pesan }}
+                        <td>{{ $data->nama }}</td>
+                        <td>{{ $data->email }}</td>
+                        <td>{{ $data->pesan }}</td>
+                        <td>
+                       
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-danger">Delete</button>
+                        </form>
+                        </td>
+                    </tr>
+                    @endforeach
+                </table>
 
-                <td width="200px">
-                <form action="{{ route('saran.destroy',$data->id) }}" method="POST">
-
-                    <a class="btn btn-primary" href="{{ route('saran.show',$data->id) }}">Show</a>
-                    @csrf
-                    @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form></td>
-                </td>
-            </tr>
-            @endforeach
-            </table>
-        </div>
-        </div>
-        {{-- @endsection --}}
+            </div>
+       
