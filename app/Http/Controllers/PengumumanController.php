@@ -89,7 +89,7 @@ class PengumumanController extends Controller
     public function update(Request $request, $id)
     {
         $pgm = Pengumuman::find($id);
-        $pgm->id = $request->id;
+        // $pgm->id = $request->id;
         $pgm->Judul = $request->Judul;
         $pgm->Isi = $request->Isi;
 
