@@ -31,13 +31,14 @@
     </header>
     <!-- Header Section End -->
 
-    
+
     {{-- content --}}
     {{-- @extends('sebelum.layouts') --}}
 
     {{-- @section('content') --}}
+    <div class="col-xl-10 col-md-4 offset-md-1">
         <div class="row g-2">
-            <div class="col-lg-12 margin-tb">
+            <div class="col-lg-6 margin-tb">
                 <div class="pull-left mt-2">
                 </div>
 
@@ -55,19 +56,19 @@
                 </div>
                 <!-- End Form Search -->
 
-               
+
         <table class="table table-bordered">
 
             @foreach ($saran as $data)
             <tr>
-                <td width="250px"><b>Nama:</b><br>
+                <td width="300px"><b>Nama:</b><br>
                 {{ $data->nama }}<br>
                 <b>Email:</b><br>
                 {{ $data->email }}<br>
                 <b>Pesan:</b><br>
                 {{ $data->pesan }}
 
-                <td width="100px">
+                <td width="200px">
                 <form action="{{ route('saran.destroy',$data->id) }}" method="POST">
 
                     <a class="btn btn-primary" href="{{ route('saran.show',$data->id) }}">Show</a>
@@ -75,10 +76,10 @@
                     @method('DELETE')
                     <button type="submit" class="btn btn-danger">Delete</button>
                 </form></td>
-</td>
+                </td>
             </tr>
             @endforeach
             </table>
         </div>
-
+        </div>
         {{-- @endsection --}}

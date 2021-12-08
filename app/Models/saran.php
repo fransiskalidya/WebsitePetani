@@ -7,8 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class saran extends Model
 {
+
     use HasFactory;
     protected $table = 'saran';
+    public $timestamps = false;
+
     protected $fillable = [
         'nama',
         'email',

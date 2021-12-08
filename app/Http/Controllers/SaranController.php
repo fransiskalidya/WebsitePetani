@@ -41,8 +41,8 @@ class SaranController extends Controller
             'email' => $request->email,
             'pesan' => $request->pesan,
         ]);
-        // return redirect()->('/contact');
-        return redirect()->route('saran.index');
+
+        return redirect('/');
     }
 
     /**
