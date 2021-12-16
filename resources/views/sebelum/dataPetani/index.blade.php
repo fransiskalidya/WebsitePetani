@@ -200,7 +200,7 @@
             <!-- Content Row -->
             <div class="row g-2">
                 <div class="col-xl-12 col-md-4 offset-md-1" style="margin-bottom: 30px">
-                    <a class="btn btn-success" href="{{'/inputData'}}"> Input data petani</a>
+                    <a class="btn btn-success" href="{{'/inputData'}}"> Tambah data petani</a>
                 </div>
               <!-- Total Item Sold Example -->
                 <div class="col-xl-10 col-md-4 offset-md-1">
@@ -227,11 +227,11 @@
                         <td>{{ $data->no_tlpn }}</td>
                         <td>
                         <form action="{{ route('dataPetani.destroy',$data->id) }}" method="POST">
-                            <a class="btn btn-info" href="{{ route('dataPetani.show',$data->id) }}">Show</a>
+                            <a class="btn btn-info" href="{{ route('dataPetani.show',$data->id) }}">Tampil</a>
                             <a class="btn btn-primary" href="{{ route('dataPetani.edit',$data->id) }}">Edit</a>
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                         </td>
                     </tr>

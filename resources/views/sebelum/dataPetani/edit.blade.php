@@ -35,10 +35,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Input Data Petani</h2>
+                        <h2>Tambah Data Petani</h2>
                         <div class="breadcrumb__option">
                             <a href="./index.html">Home</a>
-                            <span>Input Data Petani</span>
+                            <span>Tambah Data Petani</span>
                         </div>
                     </div>
                 </div>

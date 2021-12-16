@@ -37,10 +37,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="breadcrumb__text">
-                        <h2>Input Pengumuman</h2>
+                        <h2>Tambah Pengumuman</h2>
                         <div class="breadcrumb__option">
                             <a href="{{'home'}}">Home</a>
-                            <span>Input Pengumuman</span>
+                            <span>Tambah Pengumuman</span>
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Input Pengumuman</h2>
+                        <h2>Tambah Pengumuman</h2>
                     </div>
                     <div class="card-body">
                         @if ($errors->any())

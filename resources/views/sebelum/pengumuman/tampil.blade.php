@@ -42,7 +42,7 @@
                 <div class="pull-left mt-2">
                 </div>
                 {{-- <div class="float-right my-3 mx-5">
-                    <a class="btn btn-success" href="{{'/inputPengumuman'}}"> Input Pengumuman</a>
+                    <a class="btn btn-success" href="{{'/inputPengumuman'}}"> Tambah Pengumuman</a>
                 </div> --}}
             </div>
         </div>
@@ -73,7 +73,7 @@
                     <a class="btn btn-primary" href="{{ route('pengumuman.edit',$data->id) }}">Edit</a>
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-danger">Hapus</button>
                 </form></td> --}}
                 </td>
             </tr>

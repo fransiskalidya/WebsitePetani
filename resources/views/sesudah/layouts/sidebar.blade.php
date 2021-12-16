@@ -20,23 +20,16 @@
       <li class="nav-item active">
         <a class="nav-link" href="{{'/home'}}">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Beranda Admin</span></a>
       </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
         <a class="nav-link collapsed" href="{{ url('invoice') }}">
           <i class="fas fa-fw fa-cog"></i>
-          <span>Invoice Transaksi</span></a>
+          <span>Riwayat Transaksi</span></a>
       </li>
 
-      <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="{{'/inputData'}}">
-          <i class="fas fa-fw fa-wrench"></i>
-          <span>Input Data Penerima Subsidi</span>
-        </a>
-      </li>
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
@@ -73,17 +66,17 @@
       <li class="nav-item">
         <a class="nav-link" href="{{'/pengumuman' }}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>CRUD Pengumuman</span></a>
+          <span>Pengumuman</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{route('contents.tampil') }}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>CRUD Artikel</span></a>
+          <span>Artikel</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="{{'/saran' }}">
           <i class="fas fa-fw fa-chart-area"></i>
-          <span>CRUD Saran</span></a>
+          <span>Saran</span></a>
       </li>
       {{-- <li class="nav-item">
          @if (Route::has('register'))
