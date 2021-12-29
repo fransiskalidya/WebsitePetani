@@ -221,7 +221,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="contact__form__title">
-                        <h2>Leave Message</h2>
+                        <h2>Tinggalkan Pesan</h2>
                     </div>
                 </div>
             </div>
@@ -232,14 +232,14 @@
                 @csrf
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="nama" placeholder="Your name" required>
+                        <input type="text" name="nama" placeholder="Nama" required>
                     </div>
                     <div class="col-lg-6 col-md-6">
-                        <input type="text" name="email" placeholder="Your Email" required>
+                        <input type="text" name="email" placeholder="Email" required>
                     </div>
                     <div class="col-lg-12 text-center">
-                        <textarea name="pesan" placeholder="Your message" required></textarea>
-                        <button type="submit" class="site-btn">SEND MESSAGE</button>
+                        <textarea name="pesan" placeholder="Pesan" required></textarea>
+                        <button type="submit" class="site-btn">Kirim Pesan</button>
                     </div>
                 </div>
             </form>

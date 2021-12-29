@@ -57,11 +57,11 @@
             <td>{{ $Content->Tips }}</td>
             <td>
             <form action="{{ route('content.destroy',$Content->id) }}" method="POST">   
-                <a class="btn btn-info" href="{{ route('content.show',$Content->id) }}">Show</a>
+                <a class="btn btn-info" href="{{ route('content.show',$Content->id) }}">Tampil</a>
                 <a class="btn btn-primary" href="{{ route('content.edit',$Content->id) }}">Edit</a>
                 @csrf 
                 @method('DELETE')
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Hapus</button>
             </form>
             </td>
         </tr>

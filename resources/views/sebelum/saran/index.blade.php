@@ -17,9 +17,9 @@
             <div class="float-left my-3 mx-4">
                 <form action="{{route('saran.index')}}" class="row g-3" method="GET">
                     <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <input type="text" class="form-control" name="search" placeholder="Cari...">
                         <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
+                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Cari data</button>
                         </span>
                     </div>
                 </form>
@@ -49,7 +49,7 @@
                         <form action="{{ route('saran.destroy',$data->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="btn btn-danger">Delete</button>
+                            <button type="submit" class="btn btn-danger">Hapus</button>
                         </form>
                         </td>
                     </tr>

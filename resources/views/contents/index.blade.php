@@ -16,9 +16,9 @@
             <div class="float-left my-2">
                 <form action="{{'/content/tampil'}}">
                     <div class="input-group custom-search-form">
-                        <input type="text" class="form-control" name="search" placeholder="Search...">
+                        <input type="text" class="form-control" name="search" placeholder="Cari...">
                         <span class="input-group-btn">
-                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Search</button>
+                            <button class="btn btn-secondary" type="submit"><i class="fa fa-search"></i> Cari data</button>
                         </span>
                     </div>
                 </form>
@@ -26,7 +26,7 @@
             <!-- End Form Search -->
 
             <div class="float-right my-2">
-                <a class="btn btn-success" href="/create"> Input Content</a>
+                <a class="btn btn-success" href="/create"> Tambah Artikel</a>
             </div>
         </div>
     </div>
@@ -60,11 +60,11 @@
             <td>{{ $Content->Tips }}</td>
             <td>
             <form action="{{ route('content.destroy',$Content->id) }}" method="POST">
-                <a class="btn btn-info" href="{{ route('content.show',$Content->id) }}">Show</a>
+                <a class="btn btn-info" href="{{ route('content.show',$Content->id) }}">Tampil</a>
                 <a class="btn btn-primary" href="{{ route('content.edit',$Content->id) }}">Edit</a>
                 @csrf
                 @method('DELETE')
-                <button type="submit" class="btn btn-danger">Delete</button>
+                <button type="submit" class="btn btn-danger">Hapus</button>
             </form>
             </td>
         </tr>
